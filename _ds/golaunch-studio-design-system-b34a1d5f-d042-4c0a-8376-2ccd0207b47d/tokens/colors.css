@@ -1,0 +1,35 @@
+:root{
+/* Base palette — GoLaunch Studio branding board */
+--orange:#F4501E; /* Live Orange */
+--blue:#1925D9; /* Tech Blue */
+--yellow:#F2DE3A; /* Highlight Yellow */
+--warm-grey:#8F8A82; /* Warm Grey */
+--off-white:#FBF9F5; /* Off White */
+--cream:#EFE9DD; /* Cream Paper */
+--ink:#141210; /* Ink Charcoal */
+/* Derived tints/shades (oklch-adjusted from base) */
+--orange-soft:#FDE2D8; --orange-deep:#C33A10;
+--blue-soft:#DDE0FB; --blue-deep:#101A9E;
+--yellow-soft:#FBF5C9;
+--grey-line:#E4DFD5; --grey-mid:#B9B3A8;
+/* Semantic aliases */
+--surface-page:var(--off-white);
+--surface-card:#FFFFFF;
+--surface-sunken:var(--cream);
+--surface-inverse:var(--ink);
+--text-body:var(--ink);
+--text-muted:var(--warm-grey);
+--text-inverse:var(--off-white);
+--accent:var(--orange);
+--accent-contrast:#FFFFFF;
+--accent-2:var(--blue);
+--highlight:var(--yellow);
+--border-default:var(--grey-line);
+--border-strong:var(--ink);
+--focus-ring:var(--blue);
+--danger:#C33A10; --success:#1B7F4B;
+/* Brand gradients (logo backgrounds + footer strip) */
+--gradient-launch:linear-gradient(135deg,#F2DE3A 0%,#F4501E 50%,#1925D9 100%); /* @kind color */
+--gradient-heat:linear-gradient(135deg,#F4501E 0%,#F2DE3A 100%); /* @kind color */
+--gradient-violet:linear-gradient(160deg,#B0378F 0%,#1925D9 100%); /* @kind color */
+}
