@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/golaunch-studio-design-system-b34a1d5f-d042-4c0a-8376-2ccd0207b47d/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/golaunch-studio-design-system-b34a1d5f-d042-4c0a-8376-2ccd0207b47d/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/golaunch-studio-design-system-b34a1d5f-d042-4c0a-8376-2ccd0207b47d/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/golaunch-studio-design-system-b34a1d5f-d042-4c0a-8376-2ccd0207b47d/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/golaunch-studio-design-system-b34a1d5f-d042-4c0a-8376-2ccd0207b47d/styles.css">
+  <script src="_ds/golaunch-studio-design-system-b34a1d5f-d042-4c0a-8376-2ccd0207b47d/_ds_bundle.js"></script>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <style>
+    html{scroll-behavior:smooth}
+    @keyframes gls-box{0%,100%{opacity:1}50%{opacity:0.25}}
+    body{margin:0;background:var(--off-white);color:var(--ink);font-family:var(--font-body,'Plus Jakarta Sans',sans-serif)}
+    a{color:var(--ink)}
+    a:hover{color:var(--orange)}
+  </style>
+</helmet>
+
+<div style="min-width:1000px">
+
+<!-- Side section dots -->
+<div data-screen-label="Section Dots" style="position:fixed;right:28px;top:50%;transform:translateY(-50%);z-index:70;display:flex;flex-direction:column;gap:16px;align-items:flex-end">
+  <sc-for list="{{ dotItems }}" as="d" hint-placeholder-count="4">
+    <a href="{{ d.href }}" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+      <sc-if value="{{ d.isActive }}" hint-placeholder-val="{{ false }}">
+        <span style="font-size:10px;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:var(--orange)">{{ d.label }}</span>
+      </sc-if>
+      <span style="width:{{ d.size }};height:{{ d.size }};border-radius:50%;background:{{ d.color }};display:inline-block;transition:all 0.2s ease-out"></span>
+    </a>
+  </sc-for>
+</div>
+
+<div data-screen-label="Nav" style="display:flex;justify-content:center;padding:28px 32px;background:var(--off-white);border-bottom:1.5px solid var(--grey-line)">
+  <nav style="display:flex;align-items:center;gap:6px;background:var(--off-white);border:1.5px solid var(--ink);border-radius:999px;padding:8px 10px;box-shadow:0 10px 30px rgba(20,18,16,0.10)">
+    <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;padding:6px 14px 6px 6px">
+      <img src="assets/mark-filled-tile.png" alt="GoLaunch Studio mark" style="height:30px;width:30px;border-radius:8px">
+      <span style="font-family:var(--font-display);font-weight:800;font-size:15px;letter-spacing:-0.02em">GoLaunch Studio<span style="color:var(--orange)">.</span></span>
+    </a>
+    <a href="index.html" style="text-decoration:none;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">← All offers</a>
+    <a href="work-with-us.html#work-with-us" style="text-decoration:none;font-size:13px;font-weight:700;padding:8px 18px;border-radius:999px;background:var(--ink);color:var(--off-white)" style-hover="background:var(--orange)">Inquire</a>
+  </nav>
+</div>
+
+<section id="top" data-screen-label="Offer Hero" style="border-bottom:1.5px solid var(--ink);padding:120px 32px 128px;text-align:center;background-color:#fff;background-image:linear-gradient(rgba(20,18,16,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(20,18,16,0.05) 1px,transparent 1px);background-size:48px 48px;background-position:center top">
+  <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">Signature Offer · RX–01</div>
+  <h1 style="margin:20px auto 0;max-width:860px;font-family:var(--font-body);font-weight:800;font-size:72px;line-height:0.96;letter-spacing:0.01em;text-transform:uppercase">Launch Intensive Care™</h1>
+  <div style="margin-top:14px;font-family:var(--font-body);font-style:italic;font-weight:600;font-size:28px;color:var(--orange)">Launch your program. Grow your impact.</div>
+  <p style="margin:24px auto 0;max-width:620px;font-size:16.5px;line-height:1.7">Juggling branding, design, funnels and content while trying to launch your course? We get it. You want your program to shine, but the moving parts are exhausting — that's where we come in.</p>
+  <div style="margin-top:36px;display:flex;justify-content:center;gap:14px">
+    <a href="work-with-us.html#work-with-us" style="display:inline-flex;background:var(--orange);color:#fff;text-decoration:none;border:1.5px solid var(--ink);border-radius:999px;padding:16px 32px;font-size:13px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase" style-hover="background:var(--orange-deep);color:#fff">Admit your offer →</a>
+    <a href="work-with-us.html" style="display:inline-flex;background:var(--off-white);text-decoration:none;border:1.5px solid var(--ink);border-radius:999px;padding:16px 32px;font-size:13px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase" style-hover="background:var(--yellow)">Not sure? Free diagnosis</a>
+  </div>
+  <div style="margin-top:36px;display:flex;justify-content:center;gap:32px;font-size:11.5px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--warm-grey)"><span>By application</span><span style="color:var(--orange)">◆</span><span>Limited slots each quarter</span><span style="color:var(--orange)">◆</span><span>Done-with-you in 4 weeks</span></div>
+</section>
+
+<!-- Empathy -->
+<section id="empathy" data-screen-label="Empathy" style="background:#fff;border-bottom:1.5px solid var(--ink)">
+  <div style="max-width:1140px;margin:0 auto;padding:120px 32px;display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1.15fr);gap:88px;align-items:center">
+    <div>
+      <img src="uploads/688a12bf9c301_LaunchIntensiveCare2.png" alt="Overwhelmed course creator at her laptop" style="width:100%;height:auto;display:block">
+    </div>
+    <div>
+      <h2 style="margin:0;font-family:var(--font-body);font-weight:800;font-size:38px;line-height:1.15;letter-spacing:0.01em">As a course creator, you're prone to putting your launch on “snooze” — or worse, ghosting your own offer before it even goes live.</h2>
+      <div style="margin:18px 0 0;font-weight:700;font-size:16px">(And no judgment — we've all been there.)</div>
+      <p style="margin:16px 0 0;font-size:15.5px;line-height:1.75;color:var(--warm-grey)">When you're juggling endless tweaks, tech hiccups, second-guessing your sales page and trying to “make it perfect”… it's way too easy for momentum to flatline.</p>
+      <a href="work-with-us.html#work-with-us" style="margin-top:28px;display:inline-flex;background:var(--orange);color:#fff;text-decoration:none;border:1.5px solid var(--ink);border-radius:999px;padding:14px 28px;font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase" style-hover="background:var(--orange-deep);color:#fff">Admit your offer →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Launch breakdown symptoms -->
+<section id="breakdown" data-screen-label="Breakdown" style="background:var(--off-white);border-bottom:1.5px solid var(--ink)">
+  <div style="max-width:1240px;margin:0 auto;padding:64px 48px;display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);gap:80px">
+    <div style="align-self:stretch">
+      <div style="position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center">
+        <div style="display:flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--ink)"><span style="display:inline-flex;gap:4px;align-items:center"><span style="width:9px;height:9px;background:var(--orange);animation:gls-box 1.6s ease-in-out 0s infinite"></span><span style="width:9px;height:9px;background:var(--yellow);animation:gls-box 1.6s ease-in-out 0.25s infinite"></span><span style="width:9px;height:9px;background:var(--ink);animation:gls-box 1.6s ease-in-out 0.5s infinite"></span></span><span>The symptoms</span></div>
+        <h2 style="margin:16px 0 0;font-family:var(--font-body);font-weight:800;font-size:46px;line-height:1.05;letter-spacing:0.01em;text-transform:uppercase">Showing signs of<br>launch breakdown<span style="color:var(--orange)">?</span></h2>
+        <p style="margin:20px 0 0;max-width:380px;font-size:15px;line-height:1.7;color:var(--warm-grey)">Scroll through the chart. If more than a few feel familiar, read the note at the end.</p>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column">
+      <div data-sym-item="0" style="min-height:52vh;display:flex;flex-direction:column;justify-content:center;padding:24px 0;box-sizing:border-box"><div style="display:flex;gap:28px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:20px;color:var(--orange);flex-shrink:0">01</span><div><div style="font-weight:800;font-size:26px;line-height:1.3">You're stuck in prep mode… forever.</div><p style="margin:12px 0 0;font-size:15.5px;line-height:1.7;color:var(--warm-grey)">You've been "almost launching" for months. The course is 80% done — and you keep tweaking instead of shipping.</p></div></div></div>
+      <div data-sym-item="1" style="min-height:52vh;display:flex;flex-direction:column;justify-content:center;padding:24px 0;box-sizing:border-box;border-top:1.5px solid var(--grey-line)"><div style="display:flex;gap:28px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:20px;color:var(--orange);flex-shrink:0">02</span><div><div style="font-weight:800;font-size:26px;line-height:1.3">You're drowning in tech chaos.</div><p style="margin:12px 0 0;font-size:15.5px;line-height:1.7;color:var(--warm-grey)">Platforms. Integrations. Automations. Twenty tabs open at midnight — and nothing's connected.</p></div></div></div>
+      <div data-sym-item="2" style="min-height:52vh;display:flex;flex-direction:column;justify-content:center;padding:24px 0;box-sizing:border-box;border-top:1.5px solid var(--grey-line)"><div style="display:flex;gap:28px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:20px;color:var(--orange);flex-shrink:0">03</span><div><div style="font-weight:800;font-size:26px;line-height:1.3">You keep rewriting your offer.</div><p style="margin:12px 0 0;font-size:15.5px;line-height:1.7;color:var(--warm-grey)">Pricing, messaging, modules — second-guessed every time you open your laptop. You're too close to it now.</p></div></div></div>
+      <div data-sym-item="3" style="min-height:52vh;display:flex;flex-direction:column;justify-content:center;padding:24px 0;box-sizing:border-box;border-top:1.5px solid var(--grey-line)"><div style="display:flex;gap:28px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:20px;color:var(--orange);flex-shrink:0">04</span><div><div style="font-weight:800;font-size:26px;line-height:1.3">You're doing it all alone.</div><p style="margin:12px 0 0;font-size:15.5px;line-height:1.7;color:var(--warm-grey)">Designer, strategist, copywriter, tech VA, project manager… and emotional support animal.</p></div></div></div>
+      <div data-sym-item="4" style="min-height:52vh;display:flex;flex-direction:column;justify-content:center;padding:24px 0;box-sizing:border-box;border-top:1.5px solid var(--grey-line)"><div style="display:flex;gap:28px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:20px;color:var(--orange);flex-shrink:0">05</span><div><div style="font-weight:800;font-size:26px;line-height:1.3">You keep saying "next month".</div><p style="margin:12px 0 0;font-size:15.5px;line-height:1.7;color:var(--warm-grey)">You're not delaying because you don't care — you're delaying because you're overwhelmed.</p></div></div></div>
+      <div data-sym-item="5" style="min-height:90vh;display:flex;flex-direction:column;justify-content:center;padding:48px 0;box-sizing:border-box">
+        <div style="position:relative;background:#fff;border:1.5px solid var(--ink);border-radius:14px;padding:76px 52px 52px;box-shadow:0 24px 48px rgba(20,18,16,0.10)">
+          <div style="position:absolute;top:-20px;left:50%;transform:translateX(-50%);width:180px;height:40px;background:var(--ink);border-radius:10px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px">
+            <span style="width:72px;height:14px;background:var(--off-white);border:1.5px solid var(--ink);border-radius:999px;display:inline-block"></span>
+          </div>
+          <p style="margin:0;font-size:15.5px;line-height:1.85;text-align:center">If you're checking off more than a few of these… it's not just "launch nerves." It's a full-blown case of <span style="font-weight:800">Pre-Launch Paralysis</span> — and it only gets heavier the longer you power through alone.</p>
+          <p style="margin:18px 0 0;font-size:15.5px;line-height:1.85;text-align:center">You don't need another template. You don't need another motivational reel. You need real, hands-on care to bring your launch back to life — <span style="font-weight:800">that's exactly why Launch Intensive Care™ exists.</span></p>
+          <p style="margin:18px 0 0;font-size:14.5px;line-height:1.8;color:var(--warm-grey);text-align:center">A 4-week done-with-you engagement designed to stabilize, support and finally get your launch off the ground — strategy, tech and design built in.</p>
+          <div style="margin-top:30px;display:flex;justify-content:center">
+            <a href="work-with-us.html#work-with-us" style="display:inline-flex;background:var(--orange);color:#fff;text-decoration:none;border:1.5px solid var(--ink);border-radius:999px;padding:14px 28px;font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase" style-hover="background:var(--orange-deep);color:#fff">Admit your offer →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="included" data-screen-label="Included" style="border-bottom:1.5px solid var(--ink)">
+  <div style="max-width:1140px;margin:0 auto;padding:112px 32px;text-align:center">
+    <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">The deliverables</div>
+    <h2 style="margin:16px 0 0;font-family:var(--font-body);font-weight:800;font-size:46px;line-height:1;letter-spacing:0.01em;text-transform:uppercase">What's inside<span style="color:var(--orange)">?</span></h2>
+    <img src="assets/lic-whats-inside-cropped.png" alt="Everything inside Launch Intensive Care — workbook, sales funnel, Canva templates and bonuses shown across devices" style="margin-top:24px;width:100%;max-width:920px;height:auto;display:block;margin-left:auto;margin-right:auto">
+    <div style="margin:24px auto 0;max-width:980px;text-align:left">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px 56px;font-size:14.5px;line-height:1.7">
+        <div style="display:flex;gap:14px;padding:8px 0"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:9px"></span><span><span style="font-weight:800">Custom funnel design</span> — lead magnet to sales page, checkout and confirmation, designed to convert and look on-brand.</span></div>
+        <div style="display:flex;gap:14px;padding:8px 0"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:9px"></span><span><span style="font-weight:800">Analytics &amp; tracking setup</span> — UTMs, pixels and dashboards installed so you can see what's working and decide with data.</span></div>
+        <div style="display:flex;gap:14px;padding:8px 0"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:9px"></span><span><span style="font-weight:800">Tech integration &amp; automations</span> — payments, emails, tags and triggers connected and running smoothly. No tech headaches, just flow.</span></div>
+        <div style="display:flex;gap:14px;padding:8px 0"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:9px"></span><span><span style="font-weight:800">Branded launch social media</span> — cohesive, launch-ready graphics to promote your offer across platforms.</span></div>
+        <div style="display:flex;gap:14px;padding:8px 0"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:9px"></span><span><span style="font-weight:800">Launch email sequence</span> — done-for-you automations including reminders and welcome emails that keep your audience nurtured.</span></div>
+        <div style="display:flex;gap:14px;padding:8px 0"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:9px"></span><span><span style="font-weight:800">Chat automation setup</span> — automated keyword flows that capture leads, deliver freebies and boost engagement in the DMs.</span></div>
+        <div style="display:flex;gap:14px;padding:8px 0"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:9px"></span><span><span style="font-weight:800">Course portal &amp; backend setup</span> — a professional, user-friendly space for your program — organized, branded, ready to impress.</span></div>
+        <div style="display:flex;gap:14px;padding:8px 0"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:9px"></span><span><span style="font-weight:800">30-day post-launch support</span> — light ongoing support to troubleshoot and keep the launch running smoothly.</span></div>
+        <div style="display:flex;gap:14px;padding:8px 0"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:9px"></span><span><span style="font-weight:800">Course &amp; program assets</span> — eye-catching thumbnails and a polished slide deck that make your content look professional.</span></div>
+        <div style="display:flex;gap:14px;padding:8px 0"><span style="width:8px;height:8px;background:var(--yellow);flex-shrink:0;margin-top:9px"></span><span><span style="font-weight:800;color:var(--orange)">Bonus: Copy polish</span> — we refine your sales copy so it sounds like you — sharper and clearer, never like it came out of a machine — plus supporting copy for pages and emails.</span></div>
+      </div>
+    </div>
+    <div style="margin-top:44px;display:flex;justify-content:center">
+      <a href="work-with-us.html#work-with-us" style="display:inline-flex;background:var(--orange);color:#fff;text-decoration:none;border:1.5px solid var(--ink);border-radius:999px;padding:16px 32px;font-size:13px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase" style-hover="background:var(--orange-deep);color:#fff">Admit your offer →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 4-week timeline -->
+<section id="timeline" data-screen-label="Timeline" style="background:#fff;border-bottom:1.5px solid var(--ink)">
+  <div style="max-width:1140px;margin:0 auto;padding:120px 32px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);gap:88px;align-items:center">
+    <div>
+      <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">The treatment plan</div>
+      <h2 style="margin:16px 0 0;font-family:var(--font-body);font-weight:800;font-size:44px;line-height:1.05;letter-spacing:0.01em;text-transform:uppercase">4-week launch treatment timeline<span style="color:var(--orange)">.</span></h2>
+      <div style="margin-top:36px;display:flex;flex-direction:column">
+        <sc-for list="{{ weeks }}" as="w" hint-placeholder-count="4">
+          <div style="border-top:1.5px solid var(--grey-line)">
+            <div onClick="{{ w.onToggle }}" style="cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 4px">
+              <span style="font-weight:800;font-size:17px">{{ w.title }}</span>
+              <span style="width:32px;height:32px;border:1.5px solid var(--ink);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;flex-shrink:0;background:{{ w.btnBg }};color:{{ w.btnFg }}">{{ w.btnLabel }}</span>
+            </div>
+            <sc-if value="{{ w.isOpen }}" hint-placeholder-val="{{ false }}">
+              <p style="margin:0;padding:0 40px 24px 4px;font-size:14.5px;line-height:1.75;color:var(--warm-grey)">{{ w.body }}</p>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="aspect-ratio:4/5;overflow:hidden">
+      <image-slot id="lic-timeline" shape="rect" placeholder="Drop a build screenshot or workspace photo"></image-slot>
+    </div>
+  </div>
+</section>
+
+<!-- Prescription pricing card -->
+<section id="pricing" data-screen-label="Pricing" style="background:var(--ink);border-bottom:1.5px solid var(--ink)">
+  <div style="max-width:760px;margin:0 auto;padding:128px 32px">
+    <div style="background:#fff;border:1.5px solid var(--ink);border-radius:14px;padding:64px 68px;text-align:center;position:relative;box-shadow:0 32px 64px rgba(0,0,0,0.35)">
+      <div style="display:flex;align-items:center;gap:28px;text-align:left;padding-bottom:32px;border-bottom:1.5px solid var(--ink)">
+        <span style="font-family:var(--font-display);font-weight:800;font-size:64px;line-height:1">℞</span>
+        <div style="font-size:14.5px;line-height:1.7">
+          <div><span style="font-weight:800">Patient name:</span> That program you've been delaying to launch</div>
+          <div><span style="font-weight:800">Date admitted:</span> The day you finally say “let's do this”</div>
+        </div>
+      </div>
+      <div style="margin-top:36px;font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">Treatment plan</div>
+      <div style="margin-top:12px;font-family:var(--font-body);font-weight:800;font-size:36px;letter-spacing:0.01em;text-transform:uppercase">Launch Intensive Care™</div>
+      <p style="margin:18px auto 0;max-width:520px;font-size:14.5px;line-height:1.75;color:var(--warm-grey)">A 4-week done-with-you setup that stabilizes your tech, sharpens your messaging, smooths out your funnel and gets your program ready for a strong, confident launch — without the overwhelm.</p>
+      <div style="margin:28px auto 0;max-width:480px;text-align:left;display:flex;flex-direction:column;gap:10px;font-size:14.5px;line-height:1.6">
+        <div style="display:flex;gap:12px"><span style="font-weight:800;color:var(--orange)">✓</span><span><span style="font-weight:800">Complete launch system</span> — every moving part mapped and owned.</span></div>
+        <div style="display:flex;gap:12px"><span style="font-weight:800;color:var(--orange)">✓</span><span><span style="font-weight:800">Websites, funnels &amp; emails</span> — written, designed and wired together.</span></div>
+        <div style="display:flex;gap:12px"><span style="font-weight:800;color:var(--orange)">✓</span><span><span style="font-weight:800">Course setup</span> — modules, lessons, checkout and student experience.</span></div>
+        <div style="display:flex;gap:12px"><span style="font-weight:800;color:var(--orange)">✓</span><span><span style="font-weight:800">Automations &amp; CRM</span> — enrollment, onboarding and follow-up run themselves.</span></div>
+        <div style="display:flex;gap:12px"><span style="font-weight:800;color:var(--orange)">✓</span><span><span style="font-weight:800">Launch support</span> — we're in the room on launch week.</span></div>
+        <div style="display:flex;gap:12px"><span style="font-weight:800;color:var(--orange)">+</span><span><span style="font-weight:800">Your Prescription™</span> — assessment and diagnosis first, so the plan fits your launch.</span></div>
+      </div>
+      <div style="margin-top:32px;padding-top:28px;border-top:1.5px solid var(--grey-line)"><div style="font-size:11px;font-weight:700;letter-spacing:0.26em;text-transform:uppercase;color:var(--warm-grey)">Your investment</div><div style="margin-top:10px;font-weight:800;font-size:32px">From $5,000</div><div style="margin-top:8px;font-size:13.5px;font-weight:600;color:var(--warm-grey)">Scoped from your Prescription™ · payment plans available · limited slots each quarter</div></div>
+      <a href="work-with-us.html#work-with-us" style="margin-top:32px;display:inline-flex;background:var(--orange);color:#fff;text-decoration:none;border:1.5px solid var(--ink);border-radius:999px;padding:16px 32px;font-size:13px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase" style-hover="background:var(--ink);color:#fff">Initiate launch →</a>
+    </div>
+  </div>
+</section>
+
+<section id="who" data-screen-label="Who" style="background:#fff;border-bottom:1.5px solid var(--ink)">
+  <div style="max-width:1240px;margin:0 auto;padding:88px 32px">
+    <h2 style="margin:0;font-family:var(--font-body);font-weight:800;font-size:40px;line-height:1;letter-spacing:0.01em;text-transform:uppercase">This is for you if<span style="color:var(--orange)">…</span></h2>
+    <div style="margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <div style="border-left:3px solid var(--orange);padding:4px 0 4px 24px;font-size:15.5px;line-height:1.7;font-weight:600">You're launching your first course or program and want it done right the first time.</div>
+      <div style="border-left:3px solid var(--orange);padding:4px 0 4px 24px;font-size:15.5px;line-height:1.7;font-weight:600">You've launched before, but the tech chaos and last-minute scrambles cost you sales.</div>
+      <div style="border-left:3px solid var(--orange);padding:4px 0 4px 24px;font-size:15.5px;line-height:1.7;font-weight:600">Your audience is ready — you need the system that turns attention into enrollments.</div>
+    </div>
+  </div>
+</section>
+
+<section id="cta" data-screen-label="CTA" style="background:#fff;color:var(--ink);padding:128px 32px;text-align:center;border-bottom:1.5px solid var(--ink)">
+  <h2 style="margin:0 auto;max-width:760px;font-family:var(--font-body);font-weight:800;font-size:56px;line-height:0.98;letter-spacing:0.01em;text-transform:uppercase">Ready to launch calm, premium and converting<span style="color:var(--orange)">?</span></h2>
+  <div style="margin-top:36px;display:flex;justify-content:center;gap:14px">
+    <a href="work-with-us.html#work-with-us" style="display:inline-flex;background:var(--ink);color:var(--off-white);text-decoration:none;border:1.5px solid var(--ink);border-radius:999px;padding:17px 34px;font-size:13px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase" style-hover="background:var(--orange);color:#fff">Work with us →</a>
+    <a href="index.html" style="display:inline-flex;color:var(--ink);text-decoration:underline;text-underline-offset:5px;padding:16px 8px;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase">Back to all offers</a>
+  </div>
+  <div style="margin-top:72px;height:8px;background:var(--gradient-launch);max-width:1240px;margin-left:auto;margin-right:auto"></div>
+  <div style="margin-top:24px;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--warm-grey)">© 2026 GoLaunch Studio · golaunchstudio.com</div>
+</section>
+
+
+<!-- Footer -->
+<footer data-screen-label="Footer" style="background:var(--ink);color:var(--off-white)">
+  
+  <div style="max-width:1240px;margin:0 auto;padding:48px 32px 56px;display:grid;grid-template-columns:1.2fr 1fr;gap:96px">
+    <div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <img src="assets/mark-filled-tile.png" alt="GoLaunch Studio mark" style="height:36px;width:36px;border-radius:8px">
+        <span style="font-family:var(--font-display);font-weight:800;font-size:20px;letter-spacing:0.02em;text-transform:uppercase">GoLaunch<span style="color:var(--orange)">.</span></span>
+      </div>
+      <p style="margin:22px 0 0;font-size:14.5px;line-height:1.7;color:var(--grey-mid);max-width:420px">I'm Naj — a launch strategist and systems partner for founder-led brands. Keeping launches calm, premium and converting since day one.</p>
+      <div style="margin-top:26px;display:flex;flex-direction:column;gap:12px;font-size:14px">
+        <a href="https://www.instagram.com/golaunchstudio" style="color:var(--off-white);text-decoration:none" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">◎ Come hang on Instagram</a>
+        <a href="index.html#start" style="display:none;color:var(--off-white);text-decoration:none" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">✉ Get The Gridlines weekly</a>
+        <a href="mailto:hello@launchremedy.com" style="color:var(--off-white);text-decoration:none" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">♡ hello@launchremedy.com</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:var(--font-display);font-weight:800;font-size:34px;line-height:1;letter-spacing:0.01em;text-transform:uppercase">Get<br>around</div>
+      <div style="margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:48px;font-size:14.5px">
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <a href="index.html#top" style="color:var(--off-white);text-decoration:none" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">Home</a>
+          <a href="about.html" style="color:var(--off-white);text-decoration:none" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">About</a>
+          <a href="index.html#areas" style="color:var(--off-white);text-decoration:none" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">Core Areas</a>
+          <a href="index.html#offers" style="color:var(--off-white);text-decoration:none" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">Signature Offers</a>
+          <a href="index.html#framework" style="color:var(--off-white);text-decoration:none" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">The Framework™</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <a href="launch-intensive-care.html" style="color:var(--off-white);text-decoration:none" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">Launch Intensive Care™</a>
+          <a href="storefront-intensive.html" style="color:var(--off-white);text-decoration:none" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">Storefront Intensive™</a>
+          <a href="business-vital-systems.html" style="color:var(--off-white);text-decoration:none" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">Business Vital Systems™</a>
+          <a href="work-with-us.html" style="color:var(--off-white);text-decoration:none" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">Work With Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="max-width:1240px;margin:0 auto;padding:24px 32px;display:flex;justify-content:space-between;border-top:1.5px solid #2e2b27;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--warm-grey)">
+    <span>© 2026 GoLaunch Studio · golaunchstudio.com</span>
+    <span>Funnels, launches &amp; systems for founder-led brands</span>
+  </div>
+  <div style="height:8px;background:var(--gradient-launch)"></div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { activeSection: 'top', openWeek: 0 };
+  componentDidMount() {
+    this._sections = [
+      { id: 'top', label: 'Overview' },
+      { id: 'breakdown', label: 'Symptoms' },
+      { id: 'included', label: 'Included' },
+      { id: 'timeline', label: 'Timeline' },
+      { id: 'pricing', label: 'Pricing' },
+      { id: 'who', label: 'For You' },
+      { id: 'cta', label: 'Start' },
+    ];
+    this._onScroll = () => {
+      let active = 'top';
+      for (const s of this._sections) {
+        const el = document.getElementById(s.id);
+        if (el && el.getBoundingClientRect().top <= window.innerHeight * 0.4) active = s.id;
+      }
+      if (active !== this.state.activeSection) this.setState({ activeSection: active });
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    const symItems = Array.from(document.querySelectorAll('[data-sym-item]'));
+    symItems.forEach(el => { el.style.transition = 'opacity 0.35s ease-out'; });
+    this._onSymScroll = () => requestAnimationFrame(() => {
+      if (!symItems.length) return;
+      const mid = window.innerHeight * 0.48;
+      let best = 0, bestDist = Infinity;
+      symItems.forEach((el, i) => {
+        const r = el.getBoundingClientRect();
+        const d = Math.abs(r.top + r.height / 2 - mid);
+        if (d < bestDist) { bestDist = d; best = i; }
+      });
+      symItems.forEach((el, i) => { el.style.opacity = i === best ? '1' : '0.22'; });
+    });
+    window.addEventListener('scroll', this._onSymScroll, { passive: true });
+    this._onSymScroll();
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this._onScroll); window.removeEventListener('scroll', this._onSymScroll); }
+  renderVals() {
+    const sections = this._sections || [{ id: 'top', label: 'Overview' }, { id: 'included', label: 'Included' }, { id: 'who', label: 'For You' }, { id: 'cta', label: 'Start' }];
+    const weekData = [
+      { title: 'Week 1: Diagnosis & Prescription', body: 'We audit your offer, audience and tech, then lock the launch plan — what we build, in what order, and what launch day looks like.' },
+      { title: 'Week 2: Stabilize & Build', body: 'Sales page, funnel and course portal built and connected — payments, emails, tags and triggers wired and tested.' },
+      { title: 'Week 3: Content & Conversion Boost', body: 'Email sequences, launch graphics and chat automations in place — every touchpoint polished for conversion.' },
+      { title: 'Week 4: Launch-Ready & Support On Call', body: 'Final QA, dry run and go-live. We stay in the room through launch week — monitoring, fixing, optimizing.' },
+    ];
+    return {
+      weeks: weekData.map((w, i) => {
+        const open = this.state.openWeek === i;
+        return { ...w, isOpen: open, btnLabel: open ? '–' : '+', btnBg: open ? 'var(--orange)' : '#fff', btnFg: open ? '#fff' : 'var(--ink)', onToggle: () => this.setState({ openWeek: open ? -1 : i }) };
+      }),
+      dotItems: sections.map(s => {
+        const active = this.state.activeSection === s.id;
+        return { href: '#' + s.id, label: s.label, isActive: active, size: active ? '14px' : '9px', color: active ? 'var(--orange)' : 'var(--grey-mid)' };
+      }),
+    };
+  }
+}
+</script>
+</body>
+</html>
