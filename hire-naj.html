@@ -8,7 +8,8 @@
 <body>
 <x-dc>
 <helmet>
-  <title>Naj — Systems Integrator & Growth Operations</title>
+  <title>Naj Capal, Digital Growth Systems Integrator</title>
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="_ds/golaunch-studio-design-system-b34a1d5f-d042-4c0a-8376-2ccd0207b47d/tokens/fonts.css">
   <link rel="stylesheet" href="_ds/golaunch-studio-design-system-b34a1d5f-d042-4c0a-8376-2ccd0207b47d/tokens/colors.css">
@@ -18,107 +19,386 @@
   <script src="_ds/golaunch-studio-design-system-b34a1d5f-d042-4c0a-8376-2ccd0207b47d/_ds_bundle.js"></script>
   <script src="image-slot.js"></script>
   <style>
-    :root{--orange:#F4501E;--orange-deep:#c93d13;--blue:#1925D9;--yellow:#F2DE3A;--off-white:#FBF9F5;--cream:#EFE9DD;--warm-grey:#8F8A82;--grey-mid:#c7c2b9;--grey-line:#e3ddd2;--ink:#141210;--font-display:'Bricolage Grotesque',sans-serif;--font-body:'Plus Jakarta Sans',sans-serif}
+    :root{--orange:#F4501E;--orange-deep:#c93d13;--blue:#1925D9;--yellow:#F2DE3A;--off-white:#FBF9F5;--cream:#EFE9DD;--warm-grey:#8F8A82;--grey-mid:#c7c2b9;--grey-line:#e3ddd2;--ink:#141210;--green:#1E9E5A;--font-display:'Bricolage Grotesque',sans-serif;--font-body:'Plus Jakarta Sans',sans-serif}
     html{scroll-behavior:smooth}
     body{margin:0;background:var(--off-white);color:var(--ink);font-family:var(--font-body)}
     a{color:var(--orange)}a:hover{color:var(--orange-deep)}
     @keyframes gls-box{0%,100%{opacity:1}50%{opacity:0.25}}
-  </style>
+    @keyframes gls-pulse{0%,100%{box-shadow:0 0 0 0 rgba(30,158,90,0.45)}70%{box-shadow:0 0 0 7px rgba(30,158,90,0)}}
+/* gls-responsive */
+img{max-width:100%}
+summary{list-style:none}
+summary::-webkit-details-marker{display:none}
+.gls-mnav{display:none}
+image-slot{min-width:0;max-width:100%}
+@media (max-width:1120px){
+[style*="min-width: 1100px"],[style*="min-width: 1000px"]{min-width:0!important}
+}
+@media (max-width:1024px){
+[style*="grid-template-columns: repeat(4, 1fr)"]{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:32px!important}
+[style*="padding: 96px 56px"]{padding-left:32px!important;padding-right:32px!important}
+}
+@media (max-width:900px){
+[data-screen-label="Section Dots"]{display:none!important}
+.gls-links{display:none!important}
+.gls-mnav{display:block}
+.gls-topnav{width:100%!important;justify-content:space-between!important}
+h1{font-size:clamp(40px,8.5vw,64px)!important}
+[style*="grid-template-columns: minmax(0px"]{grid-template-columns:minmax(0,1fr)!important;gap:48px!important}
+[style*="grid-template-columns: 1.2fr 1fr"]{grid-template-columns:minmax(0,1fr)!important;gap:56px!important}
+[style*="grid-template-columns: repeat(3, 1fr)"]{grid-template-columns:minmax(0,1fr)!important}
+[style*="position: sticky; top: 0px; height: 100vh"]{position:static!important;height:auto!important}
+[style*="min-height: 55vh"],[style*="min-height: 85vh"]{min-height:0!important}
+[style*="align-items: flex-end; gap: 6px"]{overflow-x:auto}
+[style*="justify-content: center; gap: 12px"]{flex-wrap:wrap}
+[style*="align-items: flex-end; gap: 48px"]{flex-wrap:wrap}
+[style*="height: 560px"]{height:auto!important}
+[style*="height: 520px"]{height:420px!important}
+[style*="height: 480px"]{height:400px!important}
+[style*="right: -24px"]{right:12px!important}
+[style*="left: -24px"]{left:12px!important}
+}
+@media (max-width:640px){
+h1{font-size:clamp(33px,10.5vw,46px)!important}
+[style*="padding: 56px 64px 64px"]{padding:32px 22px 40px!important}
+[style*="font-size: 64px"]{font-size:40px!important}
+[style*="font-size: 40px"]{font-size:28px!important}
+
+[style*="font-size: 60px"]{font-size:clamp(26px,8vw,38px)!important}
+h2[style*="font-size: 6"],h2[style*="font-size: 5"]{font-size:clamp(28px,8.5vw,36px)!important}
+h2[style*="font-size: 4"]{font-size:clamp(26px,8vw,32px)!important}
+h3[style*="font-size: 30px"]{font-size:23px!important}
+[style*="font-size: 34px"]{font-size:26px!important}
+[style*="font-size: 28px"]{font-size:20px!important}
+[style*="grid-template-columns: repeat(2, 1fr)"],[style*="grid-template-columns: 1fr 1fr"],[style*="grid-template-columns: repeat(4, 1fr)"]{grid-template-columns:minmax(0,1fr)!important;gap:24px!important}
+[style*="padding: 26px 32px"]{padding:14px!important}
+[style*="padding: 28px 32px"]{padding:14px 12px!important}
+[style*="padding: 96px 32px"]{padding:64px 20px!important}
+[style*="padding: 96px 56px"]{padding:64px 20px!important}
+[style*="padding: 104px 32px"]{padding:72px 20px!important}
+[style*="padding: 112px 32px"]{padding:72px 20px!important}
+[style*="padding: 120px 32px"]{padding:80px 20px!important}
+[style*="padding: 128px 32px"]{padding:80px 20px!important}
+[style*="padding: 88px 32px"]{padding:56px 20px!important}
+[style*="padding: 64px 48px"]{padding:56px 20px!important}
+[style*="padding: 44px 48px"]{padding:28px 22px!important}
+[style*="padding: 64px 68px"]{padding:36px 22px!important}
+[style*="padding: 36px 40px"]{padding:26px 20px!important}
+[style*="padding: 36px 32px"]{padding:26px 20px!important}
+[style*="padding: 96px 56px 0px"]{padding:64px 20px 0!important}
+[style*="padding: 132px 32px 120px"]{padding:112px 20px 76px!important}
+[style*="padding: 120px 32px 128px"]{padding:80px 20px 88px!important}
+[style*="padding: 72px 32px 88px"]{padding:56px 20px 64px!important}
+[style*="padding: 64px 32px 72px"]{padding:48px 20px 56px!important}
+[style*="padding: 56px 32px 96px"]{padding:40px 20px 72px!important}
+[style*="padding: 48px 32px 56px"]{padding:40px 20px 48px!important}
+[style*="padding: 80px 32px 96px"]{padding:56px 20px 72px!important}
+[style*="padding: 16px 32px"]{padding:14px 22px!important}
+[style*="padding: 17px 34px"]{padding:14px 24px!important}
+[style*="justify-content: center; gap: 14px"],[style*="justify-content: center; gap: 16px"],[style*="justify-content: center; gap: 32px"],[style*="gap: 16px; align-items: center; justify-content: center"]{flex-wrap:wrap}
+[style*="height: 520px"]{height:340px!important}
+[style*="height: 480px"]{height:320px!important}
+[style*="right: -24px"]{padding:16px 18px!important;font-size:12px!important;bottom:-20px!important}
+}
+@media (max-width:480px){
+nav span[style*="font-size: 15px"]{display:none!important}
+}
+</style>
 </helmet>
 
 <div style="max-width:880px;margin:0 auto;padding:80px 32px 96px">
 
   <!-- Header -->
   <header data-screen-label="Header" style="display:flex;flex-direction:column;align-items:center;text-align:center">
-    <div style="display:flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase"><span style="display:inline-flex;gap:4px;align-items:center"><span style="width:9px;height:9px;background:var(--orange);animation:gls-box 1.6s ease-in-out 0s infinite"></span><span style="width:9px;height:9px;background:var(--yellow);animation:gls-box 1.6s ease-in-out 0.25s infinite"></span><span style="width:9px;height:9px;background:var(--ink);animation:gls-box 1.6s ease-in-out 0.5s infinite"></span></span><span>Private profile</span></div>
+    <div style="display:flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--green)"><span style="width:10px;height:10px;border-radius:50%;background:var(--green);animation:gls-pulse 2s ease-out infinite"></span><span>Available</span></div>
     <h1 style="margin:20px 0 0;font-family:var(--font-body);font-weight:800;font-size:58px;line-height:1;letter-spacing:0.01em;text-transform:uppercase">Hi, I'm Naj<span style="color:var(--orange)">.</span></h1>
-    <div style="margin-top:14px;font-family:var(--font-body);font-style:italic;font-weight:600;font-size:22px;color:var(--orange)">Systems Integrator · Funnels, AI &amp; Automation Specialist</div>
-    <p style="margin:24px auto 0;max-width:600px;font-size:16px;line-height:1.75">I build strategic funnels and scalable operation systems for growing businesses. If you can describe it, I can build the system that runs it — the funnel, the automations, the AI workflows, and the operations behind them.</p>
+    <div style="margin-top:28px;width:168px;height:168px;border-radius:50%;border:1.5px solid var(--ink);overflow:hidden;background:#fff">
+      <image-slot id="naj-portrait" shape="circle" placeholder="Drop your portrait"></image-slot>
+    </div>
+    <div style="margin-top:16px;font-family:var(--font-display);font-weight:800;font-size:19px;letter-spacing:0.02em">Naj Capal</div>
+    <div style="margin-top:8px;font-family:var(--font-body);font-style:italic;font-weight:600;font-size:22px;color:var(--orange)">Digital Growth Systems Integrator &amp; Build Partner</div>
+    <p style="margin:24px auto 0;max-width:620px;font-size:16px;line-height:1.75">I build and improve the systems growing businesses rely on to attract leads, convert customers, deliver offers, and operate more efficiently. My work brings together funnels, CRM automation, AI workflows, launches, digital products, and business operations into <span style="font-weight:700">one connected system.</span></p>
+    <p style="margin:16px auto 0;max-width:620px;font-size:16px;line-height:1.75">If you can explain the vision, I can map what is needed, build it, and help your team run it.</p>
     <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
       <a href="mailto:hello@launchremedy.com" style="text-decoration:none;background:var(--ink);color:var(--off-white);border:1.5px solid var(--ink);border-radius:999px;padding:14px 28px;font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase" style-hover="background:var(--orange);color:#fff">Email me →</a>
-      <a href="https://bynajmah.substack.com/" style="text-decoration:none;background:#fff;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:14px 28px;font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase" style-hover="background:var(--yellow);color:var(--ink)">Substack</a>
+      <a href="https://bynajmah.substack.com/" style="text-decoration:none;background:#fff;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:14px 28px;font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase" style-hover="background:var(--yellow);color:var(--ink)">Read my Substack →</a>
     </div>
   </header>
 
-  <!-- What I'm looking for -->
+  <!-- The role -->
   <section data-screen-label="The Role" style="margin-top:72px;border:1.5px solid var(--ink);background:#fff;padding:44px 48px">
     <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">The role I'm looking for</div>
-    <h2 style="margin:14px 0 0;font-family:var(--font-body);font-weight:800;font-size:28px;line-height:1.2;letter-spacing:0.01em">Integrator &amp; lead builder in a GoHighLevel + Claude workspace.</h2>
-    <p style="margin:16px 0 0;font-size:15.5px;line-height:1.75">I'm looking for a long-term seat where I own operations and growth systems — the person who takes the vision, translates it into funnels, automations and AI workflows, and runs the machine that delivers it. Think operations and growth-strategy partner: I integrate the tools, build the systems, and keep the whole engine running while you lead.</p>
+    <h2 style="margin:14px 0 0;font-family:var(--font-body);font-weight:800;font-size:28px;line-height:1.2;letter-spacing:0.01em">Long-term ownership of digital growth systems, and the operations supporting them.</h2>
+    <p style="margin:16px 0 0;font-size:15.5px;line-height:1.75">My ideal position sits between strategy, implementation, and operations. I work with founders and leadership teams to translate ideas and business goals into practical systems, I can plan the work, build the infrastructure, coordinate execution, review performance, and improve what isn't working.</p>
+    <p style="margin:14px 0 0;font-size:14px;font-weight:700;color:var(--warm-grey)">Depending on the company, this position may be called:</p>
+    <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:8px">
+      <span style="border:1.5px solid var(--ink);background:var(--off-white);padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase">Digital Growth Systems Integrator</span>
+      <span style="border:1.5px solid var(--ink);background:var(--off-white);padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase">Growth Operations Manager</span>
+      <span style="border:1.5px solid var(--ink);background:var(--off-white);padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase">Marketing Operations Manager</span>
+      <span style="border:1.5px solid var(--ink);background:var(--off-white);padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase">Digital Operations Manager</span>
+      <span style="border:1.5px solid var(--ink);background:var(--off-white);padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase">Systems &amp; Automation Lead</span>
+      <span style="border:1.5px solid var(--ink);background:var(--off-white);padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase">Launch Operations Lead</span>
+      <span style="border:1.5px solid var(--ink);background:var(--off-white);padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase">Technical Project Manager</span>
+    </div>
+    <p style="margin:18px 0 0;font-size:15.5px;line-height:1.75">I'm not limited to a particular title or platform. I'm looking for a position where I can contribute beyond individual tasks and take meaningful ownership of how the business grows and operates.</p>
   </section>
 
   <!-- What I bring -->
-  <section data-screen-label="What I Bring" style="margin-top:56px">
+  <section data-screen-label="What I Bring" style="margin-top:64px">
     <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">What I bring</div>
-    <div style="margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px 48px;font-size:15px;line-height:1.7">
-      <div style="display:flex;gap:14px;padding:6px 0"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:9px"></span><span><span style="font-weight:800">Strategic funnels</span> — opt-in to checkout, mapped and built to convert, not just look good.</span></div>
-      <div style="display:flex;gap:14px;padding:6px 0"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:9px"></span><span><span style="font-weight:800">AI systems</span> — Claude-powered workflows, agents and internal tools that do real operational work.</span></div>
-      <div style="display:flex;gap:14px;padding:6px 0"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:9px"></span><span><span style="font-weight:800">Automation</span> — CRM pipelines, follow-up, onboarding and reporting that run without hand-holding.</span></div>
-      <div style="display:flex;gap:14px;padding:6px 0"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:9px"></span><span><span style="font-weight:800">Launches</span> — full launch systems owned end to end: pages, emails, tech, launch-week support.</span></div>
+    <div style="margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div style="border:1.5px solid var(--ink);background:#fff;padding:28px 30px">
+        <h3 style="margin:0;font-family:var(--font-display);font-weight:800;font-size:18px;text-transform:uppercase">Growth Systems</h3>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7">I look at the complete journey, lead generation to purchase, onboarding, delivery, retention, and future offers, and connect the platforms, processes, and customer touchpoints so they work together clearly and consistently.</p>
+      </div>
+      <div style="border:1.5px solid var(--ink);background:#fff;padding:28px 30px">
+        <h3 style="margin:0;font-family:var(--font-display);font-weight:800;font-size:18px;text-transform:uppercase">Strategic Funnels</h3>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7">Funnels planned and built around the offer, audience, and customer journey, designed to look professional, communicate the offer clearly, and guide the customer to the next step.</p>
+        <p style="margin:12px 0 0;font-size:13px;line-height:1.7;color:var(--warm-grey)">Lead magnets · Webinars · Sales pages · Applications · Checkout · Order bumps · Upsells &amp; downsells · Thank-you pages · Evergreen · Post-purchase journeys</p>
+      </div>
+      <div style="border:1.5px solid var(--ink);background:#fff;padding:28px 30px">
+        <h3 style="margin:0;font-family:var(--font-display);font-weight:800;font-size:18px;text-transform:uppercase">Marketing Automation</h3>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7">Automated customer journeys that reduce manual follow-up and keep leads moving.</p>
+        <p style="margin:12px 0 0;font-size:13px;line-height:1.7;color:var(--warm-grey)">CRM pipelines · Lead routing · Tags &amp; segmentation · Email nurture · Sales follow-up · Appointment reminders · Onboarding · Abandoned-cart recovery · Review requests · Reactivation · Internal notifications · Conditional workflows</p>
+      </div>
+      <div style="border:1.5px solid var(--ink);background:#fff;padding:28px 30px">
+        <h3 style="margin:0;font-family:var(--font-display);font-weight:800;font-size:18px;text-transform:uppercase">AI Systems</h3>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7">Practical workflows built with Claude, ChatGPT, and Codex that support real business operations, AI assistants, internal tools, lead-processing systems, content workflows, knowledge systems, and custom automations. AI reduces the repetitive work; human judgment, strategy, and quality control stay at the center.</p>
+      </div>
+      <div style="border:1.5px solid var(--ink);background:#fff;padding:28px 30px">
+        <h3 style="margin:0;font-family:var(--font-display);font-weight:800;font-size:18px;text-transform:uppercase">Launch Management</h3>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7">The operational and technical side of a launch, from planning through post-launch review, timeline, assets, pages, automations, testing, launch-week support, monitoring, and documentation. Successful launches become evergreen or repeatable systems.</p>
+      </div>
+      <div style="border:1.5px solid var(--ink);background:#fff;padding:28px 30px">
+        <h3 style="margin:0;font-family:var(--font-display);font-weight:800;font-size:18px;text-transform:uppercase">Digital Operations</h3>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7">Scattered tasks and manual processes replaced with organized workflows.</p>
+        <p style="margin:12px 0 0;font-size:13px;line-height:1.7;color:var(--warm-grey)">Project planning · Team coordination · Process documentation · SOPs · Platform organization · QA · Timeline management · System maintenance · Reporting · Process improvement</p>
+      </div>
     </div>
   </section>
 
-  <!-- Toolbox -->
-  <section data-screen-label="Toolbox" style="margin-top:56px">
-    <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">Expert in</div>
-    <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px">
+  <!-- Performance -->
+  <section data-screen-label="Performance" style="margin-top:64px;border:1.5px solid var(--ink);background:#fff;padding:44px 48px">
+    <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">Performance &amp; optimization</div>
+    <h2 style="margin:14px 0 0;font-family:var(--font-body);font-weight:800;font-size:28px;line-height:1.2;letter-spacing:0.01em">A project isn't finished simply because it has been published.</h2>
+    <p style="margin:16px 0 0;font-size:15.5px;line-height:1.75">I review performance to understand what is working, where customers are dropping off, and what should be improved next. Depending on the project, I may review:</p>
+    <div style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:8px 40px;font-size:14px;line-height:1.6">
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Landing-page conversion rates</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Traffic, lead sources &amp; cost per lead</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Email open &amp; click rates</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Webinar registration &amp; attendance</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Sales conversion &amp; checkout abandonment</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Order-bump &amp; upsell performance</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Pipeline movement</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Appointment booking &amp; show rates</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Onboarding, retention &amp; repeat purchases</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Workflow errors &amp; operational delays</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Revenue by offer or campaign</span></div>
+    </div>
+    <p style="margin:20px 0 0;font-size:15.5px;line-height:1.75">I use this information to recommend and implement practical improvements, adjusting a page, improving follow-up, fixing a workflow, changing segmentation, simplifying a process, or identifying a larger gap in the customer journey.</p>
+  </section>
+
+  <!-- Platforms -->
+  <section data-screen-label="Platforms" style="margin-top:64px">
+    <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">Platforms I work with</div>
+    <div style="margin-top:20px;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--warm-grey)">Core platforms</div>
+    <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:10px">
       <span style="border:1.5px solid var(--ink);background:var(--yellow);padding:10px 20px;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">GoHighLevel</span>
-      <span style="border:1.5px solid var(--ink);background:var(--yellow);padding:10px 20px;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Claude</span>
-      <span style="border:1.5px solid var(--ink);background:#fff;padding:10px 20px;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Kajabi</span>
-      <span style="border:1.5px solid var(--ink);background:#fff;padding:10px 20px;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Shopify</span>
-      <span style="border:1.5px solid var(--ink);background:#fff;padding:10px 20px;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Codex</span>
+      <span style="border:1.5px solid var(--ink);background:var(--yellow);padding:10px 20px;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Kajabi</span>
+      <span style="border:1.5px solid var(--ink);background:var(--yellow);padding:10px 20px;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">ClickFunnels</span>
+      <span style="border:1.5px solid var(--ink);background:var(--yellow);padding:10px 20px;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Shopify</span>
+      <span style="border:1.5px solid var(--ink);background:var(--yellow);padding:10px 20px;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Systeme.io</span>
     </div>
-    <p style="margin:18px 0 0;font-size:14px;line-height:1.7;color:var(--warm-grey)">Plus the surrounding stack: Systeme.io, ClickFunnels, WordPress, Zapier, Make, ManyChat, Klaviyo, Stripe, Airtable and more.</p>
-    <div style="margin-top:32px;border:1.5px solid var(--ink);background:#fff;padding:36px 40px">
-      <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">GoHighLevel — in depth</div>
-      <div style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px 40px;font-size:14.5px;line-height:1.7">
-        <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:8px"></span><span><span style="font-weight:800">Full sub-account setup</span> — pipelines, calendars, workflows, snapshots and reporting from zero to running.</span></div>
-        <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:8px"></span><span><span style="font-weight:800">Funnels &amp; websites in GHL</span> — landing pages, order forms, upsells and membership areas built natively.</span></div>
-        <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:8px"></span><span><span style="font-weight:800">Automation architecture</span> — lead routing, nurture sequences, appointment flows, review requests, reactivation campaigns.</span></div>
-        <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:8px"></span><span><span style="font-weight:800">AI inside GHL</span> — conversation AI, Claude-powered assist and custom integrations where native features stop.</span></div>
+    <div style="margin-top:20px;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--warm-grey)">Supporting tools</div>
+    <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px">
+      <span style="border:1.5px solid var(--ink);background:#fff;padding:8px 16px;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Claude</span>
+      <span style="border:1.5px solid var(--ink);background:#fff;padding:8px 16px;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">ChatGPT</span>
+      <span style="border:1.5px solid var(--ink);background:#fff;padding:8px 16px;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Codex</span>
+      <span style="border:1.5px solid var(--ink);background:#fff;padding:8px 16px;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Lovable</span>
+      <span style="border:1.5px solid var(--ink);background:#fff;padding:8px 16px;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">ManyChat</span>
+      <span style="border:1.5px solid var(--ink);background:#fff;padding:8px 16px;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Zapier</span>
+      <span style="border:1.5px solid var(--ink);background:#fff;padding:8px 16px;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Make</span>
+      <span style="border:1.5px solid var(--ink);background:#fff;padding:8px 16px;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Klaviyo</span>
+      <span style="border:1.5px solid var(--ink);background:#fff;padding:8px 16px;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Stripe</span>
+      <span style="border:1.5px solid var(--ink);background:#fff;padding:8px 16px;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Airtable</span>
+      <span style="border:1.5px solid var(--ink);background:#fff;padding:8px 16px;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">WordPress</span>
+      <span style="border:1.5px solid var(--ink);background:#fff;padding:8px 16px;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Canva</span>
+      <span style="border:1.5px solid var(--ink);background:#fff;padding:8px 16px;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Google Workspace</span>
+    </div>
+    <p style="margin:18px 0 0;font-size:14px;line-height:1.7;color:var(--warm-grey)">My experience isn't limited to this list, I'm technically curious, comfortable learning new platforms, and able to work within an existing technology stack.</p>
+  </section>
+
+  <!-- GHL expertise -->
+  <section data-screen-label="GHL Expertise" style="margin-top:64px;border:1.5px solid var(--ink);background:#fff;padding:44px 48px">
+    <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">GoHighLevel expertise</div>
+    <p style="margin:16px 0 0;font-size:15.5px;line-height:1.75">Hands-on experience building and managing complete systems inside GoHighLevel.</p>
+    <div style="margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:20px 40px">
+      <div>
+        <div style="font-family:var(--font-display);font-weight:800;font-size:15px;text-transform:uppercase">Account &amp; CRM setup</div>
+        <p style="margin:10px 0 0;font-size:13.5px;line-height:1.7;color:var(--warm-grey)">Full sub-account setup · Pipelines &amp; opportunity stages · Calendars &amp; appointments · Forms &amp; surveys · Tags &amp; custom fields · Segmentation · Workflow architecture · Snapshots · Reporting · Backend organization · Naming conventions</p>
       </div>
-      <p style="margin:22px 0 0;font-size:14.5px;line-height:1.75">I also run my own GHL agency account serving my local community — so I know the platform from the agency side, not just the sub-account side. I'm not competing with agency owners: I prefer working the back-end of <span style="font-weight:800">your</span> GHL clients — setting up, systemizing and growing their accounts under your banner.</p>
+      <div>
+        <div style="font-family:var(--font-display);font-weight:800;font-size:15px;text-transform:uppercase">Funnels &amp; websites</div>
+        <p style="margin:10px 0 0;font-size:13.5px;line-height:1.7;color:var(--warm-grey)">Landing pages · Lead magnet funnels · Webinar registration · Sales pages · Checkout flows · Order forms · Upsells &amp; downsells · Thank-you pages · Membership areas · Mobile optimization · Conversion tracking · Full funnel testing</p>
+      </div>
+      <div>
+        <div style="font-family:var(--font-display);font-weight:800;font-size:15px;text-transform:uppercase">Automation</div>
+        <p style="margin:10px 0 0;font-size:13.5px;line-height:1.7;color:var(--warm-grey)">Lead routing · Nurture sequences · Sales follow-up · Appointment reminders · No-show follow-up · Onboarding · Review requests · Reactivation · Abandoned-cart recovery · Internal notifications · Conditional workflow logic</p>
+      </div>
+      <div>
+        <div style="font-family:var(--font-display);font-weight:800;font-size:15px;text-transform:uppercase">AI within GoHighLevel</div>
+        <p style="margin:10px 0 0;font-size:13.5px;line-height:1.7;color:var(--warm-grey)">Native conversation AI · Lead qualification · Personalized follow-up · Internal assistance · Custom integrations with Claude and other AI tools when built-in features aren't enough</p>
+      </div>
     </div>
+    <div style="margin-top:28px;border:1.5px solid var(--grey-line);background:var(--off-white);padding:24px 28px">
+      <div style="font-family:var(--font-display);font-weight:800;font-size:15px;text-transform:uppercase">ManyChat &amp; social automation</div>
+      <p style="margin:10px 0 0;font-size:14.5px;line-height:1.75">I build systems that turn social media engagement into organized lead follow-up:</p>
+      <p style="margin:12px 0 0;font-size:13.5px;font-weight:700;line-height:1.9;color:var(--ink)">Instagram content → ManyChat conversation → lead capture → GoHighLevel → segmentation → email nurture → offer</p>
+      <p style="margin:10px 0 0;font-size:14px;line-height:1.7;color:var(--warm-grey)">Documented and replicated across multiple campaigns, lead magnets, webinars, and offers.</p>
+    </div>
+    <p style="margin:24px 0 0;font-size:14.5px;line-height:1.75">I also operate my own GoHighLevel agency account, which gives me experience from both the agency and sub-account sides. I'm comfortable supporting another agency's clients under its brand, my role is to strengthen the agency's delivery, systems, and client results.</p>
+  </section>
+
+  <!-- AI workflows -->
+  <section data-screen-label="AI Workflows" style="margin-top:64px">
+    <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">AI-powered workflows &amp; business tools</div>
+    <h2 style="margin:14px 0 0;font-family:var(--font-body);font-weight:800;font-size:28px;line-height:1.2;letter-spacing:0.01em">I use Claude, Codex, Lovable, and ChatGPT to build practical AI systems that improve how a business operates.</h2>
+    <p style="margin:16px 0 0;font-size:15.5px;line-height:1.75">I don't use AI simply to generate more content. I use it to solve operational problems, reduce repetitive work, and create better ways for teams to complete everyday processes. This may include:</p>
+    <div style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:8px 40px;font-size:14px;line-height:1.6">
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>AI agents for specific business functions</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Internal dashboards &amp; business tools</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Lead qualification &amp; processing systems</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>AI-assisted customer support workflows</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Content research &amp; production systems</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Automated reporting &amp; data summaries</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Knowledge bases &amp; internal assistants</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Project intake &amp; task-routing workflows</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Client onboarding &amp; fulfillment tools</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Quality-control &amp; review processes</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Custom tools built with Lovable</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Technical implementation &amp; workflow development using Codex</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Claude-powered agents, workspaces &amp; operational workflows</span></div>
+    </div>
+    <p style="margin:20px 0 0;font-size:15.5px;line-height:1.75">I study how work currently moves through the business, identify repetitive or time-consuming steps, and determine where AI or automation can improve the process. The goal is not to remove the human element, it's to give the team more time for work that requires creativity, strategy, communication, problem-solving, and human judgment.</p>
+    <div style="margin-top:28px;border:1.5px solid var(--ink);background:#fff;padding:32px 36px">
+      <div style="font-family:var(--font-display);font-weight:800;font-size:16px;text-transform:uppercase">Improving the way teams work</div>
+      <p style="margin:12px 0 0;font-size:14.5px;line-height:1.75">Many teams lose valuable time copying information between platforms, preparing repetitive updates, searching for documents, organizing requests, or completing the same manual steps for every customer. I help turn those processes into clearer and more efficient workflows:</p>
+      <p style="margin:14px 0 0;font-size:13.5px;line-height:1.8;color:var(--warm-grey)">Identifying bottlenecks · Mapping the current process · Removing unnecessary steps · Connecting disconnected tools · Automating repetitive actions · Building AI-assisted workflows · Creating internal tools for recurring tasks · Documenting the improved process · Training the team · Reviewing results and refining</p>
+      <p style="margin:14px 0 0;font-size:14.5px;line-height:1.75">The result isn't simply another tool added to the business, it's a better process. With repetitive work handled efficiently, the team can focus on improving the customer experience, developing new offers, making strategic decisions, strengthening relationships, and growing the business.</p>
+    </div>
+  </section>
+
+  <!-- More than implementation -->
+  <section data-screen-label="Beyond Tasks" style="margin-top:64px">
+    <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">More than implementation</div>
+    <p style="margin:16px 0 0;font-size:15.5px;line-height:1.75">I'm a hands-on builder, but I contribute beyond receiving and completing assigned tasks. I can help:</p>
+    <div style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:8px 40px;font-size:14px;line-height:1.6">
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Translate business goals into clear projects &amp; priorities</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Identify gaps in the customer journey</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Manage launch &amp; implementation timelines</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Coordinate work between team members</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Review performance data &amp; recommend improvements</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Build &amp; document repeatable processes</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Improve customer onboarding &amp; delivery</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Reduce unnecessary manual work</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Organize disconnected platforms</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Turn one-time campaigns into evergreen systems</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Support development of recurring-revenue offers</span></div>
+      <div style="display:flex;gap:12px"><span style="width:8px;height:8px;background:var(--orange);flex-shrink:0;margin-top:7px"></span><span>Maintain a clean &amp; reliable backend</span></div>
+    </div>
+    <p style="margin:20px 0 0;font-size:15.5px;line-height:1.75">I can follow an established strategy and execute it accurately. I can also evaluate the current setup, identify what's missing, and propose a practical plan.</p>
   </section>
 
   <!-- How I work -->
-  <section data-screen-label="How I Work" style="margin-top:56px">
+  <section data-screen-label="How I Work" style="margin-top:64px">
     <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">How I work</div>
     <div style="margin-top:24px;display:flex;flex-direction:column">
-      <div style="padding:20px 4px;border-top:1.5px solid var(--grey-line);display:flex;gap:24px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:17px;color:var(--orange);flex-shrink:0">01</span><span style="font-size:15px;line-height:1.7"><span style="font-weight:800">Independent and big-picture.</span> I don't wait to be told what to do. I see the whole business, spot what's slowing it down or leaking revenue, and bring the fix — with a plan to ship it.</span></div>
-      <div style="padding:20px 4px;border-top:1.5px solid var(--grey-line);display:flex;gap:24px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:17px;color:var(--orange);flex-shrink:0">02</span><span style="font-size:15px;line-height:1.7"><span style="font-weight:800">I lead with ideas.</span> I proactively raise suggestions and areas to improve — offers, funnels, operations — and turn the ones you greenlight into working systems.</span></div>
-      <div style="padding:20px 4px;border-top:1.5px solid var(--grey-line);display:flex;gap:24px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:17px;color:var(--orange);flex-shrink:0">03</span><span style="font-size:15px;line-height:1.7"><span style="font-weight:800">Idea to recurring income.</span> I build products and programs end to end — funnel, customer journey, post-sale strategy — designed for repeat and continuous revenue, not one-off launches.</span></div>
-      <div style="padding:20px 4px;border-top:1.5px solid var(--grey-line);border-bottom:1.5px solid var(--grey-line);display:flex;gap:24px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:17px;color:var(--orange);flex-shrink:0">04</span><span style="font-size:15px;line-height:1.7"><span style="font-weight:800">Systems over heroics.</span> I build so the business doesn't depend on anyone's memory — including mine.</span></div>
+      <div style="padding:20px 4px;border-top:1.5px solid var(--grey-line);display:flex;gap:24px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:17px;color:var(--orange);flex-shrink:0">01</span><span style="font-size:15px;line-height:1.7"><span style="font-weight:800">I understand the bigger picture.</span> Before building, I look at the offer, customer journey, team, platforms, and business objective, so the system supports the broader business instead of solving one isolated problem.</span></div>
+      <div style="padding:20px 4px;border-top:1.5px solid var(--grey-line);display:flex;gap:24px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:17px;color:var(--orange);flex-shrink:0">02</span><span style="font-size:15px;line-height:1.7"><span style="font-weight:800">I take ownership.</span> I don't need every project divided into small instructions. Give me the goal, resources, and constraints, I can map the work, identify missing pieces, and move it forward.</span></div>
+      <div style="padding:20px 4px;border-top:1.5px solid var(--grey-line);display:flex;gap:24px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:17px;color:var(--orange);flex-shrink:0">03</span><span style="font-size:15px;line-height:1.7"><span style="font-weight:800">I bring ideas and solutions.</span> When I notice a bottleneck, missed opportunity, or weak customer experience, I raise it with a practical recommendation, focused on revenue, efficiency, delivery, or customer experience.</span></div>
+      <div style="padding:20px 4px;border-top:1.5px solid var(--grey-line);display:flex;gap:24px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:17px;color:var(--orange);flex-shrink:0">04</span><span style="font-size:15px;line-height:1.7"><span style="font-weight:800">I combine strategy and implementation.</span> I can discuss priorities with leadership, turn decisions into an execution plan, and build the pages, workflows, integrations, and documentation myself.</span></div>
+      <div style="padding:20px 4px;border-top:1.5px solid var(--grey-line);display:flex;gap:24px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:17px;color:var(--orange);flex-shrink:0">05</span><span style="font-size:15px;line-height:1.7"><span style="font-weight:800">I use performance data.</span> After implementation, I review results and identify what to adjust. Funnels, launches, and workflows should keep improving based on how customers actually interact with them.</span></div>
+      <div style="padding:20px 4px;border-top:1.5px solid var(--grey-line);display:flex;gap:24px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:17px;color:var(--orange);flex-shrink:0">06</span><span style="font-size:15px;line-height:1.7"><span style="font-weight:800">I build for consistency.</span> Clear naming conventions, reusable templates, documented workflows, and quality-control processes, so systems are easier to manage, delegate, and expand.</span></div>
+      <div style="padding:20px 4px;border-top:1.5px solid var(--grey-line);border-bottom:1.5px solid var(--grey-line);display:flex;gap:24px;align-items:baseline"><span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:17px;color:var(--orange);flex-shrink:0">07</span><span style="font-size:15px;line-height:1.7"><span style="font-weight:800">I test my work.</span> Pages, forms, payments, triggers, tags, email links, personalization fields, integrations, and mobile responsiveness, because "published" and "working properly" are not always the same thing.</span></div>
+    </div>
+  </section>
+
+  <!-- What I can own -->
+  <section data-screen-label="What I Can Own" style="margin-top:64px">
+    <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">What I can own</div>
+    <div style="margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div style="border:1.5px solid var(--ink);background:#fff;padding:24px 26px">
+        <div style="font-family:var(--font-display);font-weight:800;font-size:16px;text-transform:uppercase">Growth infrastructure</div>
+        <p style="margin:10px 0 0;font-size:13.5px;line-height:1.7;color:var(--warm-grey)">Funnels, landing pages, CRM architecture, lead management, email automation, social-to-CRM journeys, checkout systems, performance tracking.</p>
+      </div>
+      <div style="border:1.5px solid var(--ink);background:#fff;padding:24px 26px">
+        <div style="font-family:var(--font-display);font-weight:800;font-size:16px;text-transform:uppercase">Launches</div>
+        <p style="margin:10px 0 0;font-size:13.5px;line-height:1.7;color:var(--warm-grey)">Project planning, page builds, platform setup, automation, asset coordination, QA, launch support, post-launch improvements.</p>
+      </div>
+      <div style="border:1.5px solid var(--ink);background:#fff;padding:24px 26px">
+        <div style="font-family:var(--font-display);font-weight:800;font-size:16px;text-transform:uppercase">Courses &amp; digital products</div>
+        <p style="margin:10px 0 0;font-size:13.5px;line-height:1.7;color:var(--warm-grey)">Registration, checkout, payment plans, course access, onboarding, order bumps, upsells, downsells, abandoned-cart recovery, evergreen sales systems.</p>
+      </div>
+      <div style="border:1.5px solid var(--ink);background:#fff;padding:24px 26px">
+        <div style="font-family:var(--font-display);font-weight:800;font-size:16px;text-transform:uppercase">Customer journeys</div>
+        <p style="margin:10px 0 0;font-size:13.5px;line-height:1.7;color:var(--warm-grey)">Lead nurture, segmentation, sales follow-up, onboarding, retention, reactivation, customer progression into additional offers.</p>
+      </div>
+      <div style="border:1.5px solid var(--ink);background:#fff;padding:24px 26px">
+        <div style="font-family:var(--font-display);font-weight:800;font-size:16px;text-transform:uppercase">Operations</div>
+        <p style="margin:10px 0 0;font-size:13.5px;line-height:1.7;color:var(--warm-grey)">Project management, team coordination, documentation, task organization, process improvement, system maintenance, reporting.</p>
+      </div>
+      <div style="border:1.5px solid var(--ink);background:#fff;padding:24px 26px">
+        <div style="font-family:var(--font-display);font-weight:800;font-size:16px;text-transform:uppercase">AI &amp; automation</div>
+        <p style="margin:10px 0 0;font-size:13.5px;line-height:1.7;color:var(--warm-grey)">AI-assisted workflows, agents, internal tools, automated handoffs, custom integrations, systems that reduce repetitive work.</p>
+      </div>
     </div>
   </section>
 
   <!-- Proof -->
-  <section data-screen-label="Proof" style="margin-top:56px">
+  <section data-screen-label="Proof" style="margin-top:64px">
     <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">What people say</div>
     <div style="margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:16px">
       <div style="border:1.5px solid var(--ink);background:#fff;padding:28px 30px;display:flex;flex-direction:column;gap:16px">
-        <p style="margin:0;font-size:14px;line-height:1.75;flex:1">"Naj has been an amazing asset to our team! She designs beautiful pages in both Kajabi and Systeme.io. As an agency owner I've worked with dozens of designers and it's so important to find someone who not only can complete the tasks but takes the initiative that Naj does! I highly recommend her for project management and design work."</p>
-        <div style="font-weight:700;font-size:13px">Tamber Belshaw <span style="font-weight:600;color:var(--warm-grey)">· Agency owner</span></div>
+        <p style="margin:0;font-size:14px;line-height:1.75;flex:1">"Naj has been an amazing asset to our team! She designs beautiful pages in both Kajabi and Systeme.io. As an agency owner, I've worked with dozens of designers, and it's so important to find someone who not only completes the tasks but also takes the initiative that Naj does. I highly recommend her for project management and design work."</p>
+        <div style="font-weight:700;font-size:13px">Tamber Belshaw <span style="font-weight:600;color:var(--warm-grey)">· Agency Owner</span></div>
       </div>
       <div style="border:1.5px solid var(--ink);background:#fff;padding:28px 30px;display:flex;flex-direction:column;gap:16px">
-        <p style="margin:0;font-size:14px;line-height:1.75;flex:1">"Naj has an excellent eye for design and the ability to bring websites to life; she has been key in taking websites and breathing new life into them quickly and reliably. Her extensive skills and industry knowledge make her a key asset to the team, and we collectively look to her for her expertise, experience, and guidance with tech-based projects. I highly recommend Naj!"</p>
-        <div style="font-weight:700;font-size:13px">Lindsay Stead <span style="font-weight:600;color:var(--warm-grey)">· Business Coach + Mentor</span></div>
+        <p style="margin:0;font-size:14px;line-height:1.75;flex:1">"Naj has an excellent eye for design and the ability to bring websites to life. She has been key in taking websites and breathing new life into them quickly and reliably. Her extensive skills and industry knowledge make her a key asset to the team, and we collectively look to her for her expertise, experience, and guidance with tech-based projects. I highly recommend Naj!"</p>
+        <div style="font-weight:700;font-size:13px">Lindsay Stead <span style="font-weight:600;color:var(--warm-grey)">· Business Coach and Mentor</span></div>
       </div>
       <div style="border:1.5px solid var(--ink);background:#fff;padding:28px 30px;display:flex;flex-direction:column;gap:16px">
-        <p style="margin:0;font-size:14px;line-height:1.75;flex:1">"Najmah is amazing to work with. She is efficient, competent and communicates clearly. She has great skills; is warm &amp; friendly &amp; she helped me reach my goals. I appreciated the wonderful support she gave me!"</p>
+        <p style="margin:0;font-size:14px;line-height:1.75;flex:1">"Najmah is amazing to work with. She is efficient, competent, and communicates clearly. She has great skills, is warm and friendly, and helped me reach my goals. I appreciated the wonderful support she gave me!"</p>
         <div style="font-weight:700;font-size:13px">Anna Comerford</div>
       </div>
       <div style="border:1.5px solid var(--ink);background:#fff;padding:28px 30px;display:flex;flex-direction:column;gap:16px">
-        <p style="margin:0;font-size:14px;line-height:1.75;flex:1">"I worked with Naj on several design-related projects and really appreciated the creativity, speed and clarity she brought to her work. She designed my website as well as presentations and client-facing PDFs, all of which were visually appealing and looked professional. In my experience, Naj shines in well-scoped, creative projects where strong design execution is needed."</p>
+        <p style="margin:0;font-size:14px;line-height:1.75;flex:1">"I worked with Naj on several design-related projects and really appreciated the creativity, speed, and clarity she brought to her work. She designed my website as well as presentations and client-facing PDFs, all of which were visually appealing and professional."</p>
         <div style="font-weight:700;font-size:13px">Rachel Lawson <span style="font-weight:600;color:var(--warm-grey)">· Nutritesse</span></div>
       </div>
     </div>
   </section>
 
+  <!-- Opportunity -->
+  <section data-screen-label="Opportunity" style="margin-top:64px;border:1.5px solid var(--ink);background:#fff;padding:44px 48px">
+    <div style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--orange)">The opportunity I'm looking for</div>
+    <p style="margin:16px 0 0;font-size:15.5px;line-height:1.75">A long-term position with a founder, agency, or leadership team that already has momentum and needs someone to take ownership of its growth systems and digital operations. You may already have offers, an audience, existing funnels, and several platforms in use, what you need is someone who can understand how everything connects, improve what isn't working, and build what's still missing.</p>
+    <p style="margin:14px 0 0;font-size:14px;font-weight:700;color:var(--warm-grey)">I'm especially interested in growing into deeper responsibility across:</p>
+    <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:8px">
+      <span style="border:1.5px solid var(--ink);background:var(--off-white);padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase">Growth systems</span>
+      <span style="border:1.5px solid var(--ink);background:var(--off-white);padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase">Marketing operations</span>
+      <span style="border:1.5px solid var(--ink);background:var(--off-white);padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase">Digital products</span>
+      <span style="border:1.5px solid var(--ink);background:var(--off-white);padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase">Launches</span>
+      <span style="border:1.5px solid var(--ink);background:var(--off-white);padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase">Automation</span>
+      <span style="border:1.5px solid var(--ink);background:var(--off-white);padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase">Performance reporting</span>
+      <span style="border:1.5px solid var(--ink);background:var(--off-white);padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase">Process improvement</span>
+      <span style="border:1.5px solid var(--ink);background:var(--off-white);padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase">Project &amp; team coordination</span>
+    </div>
+    <p style="margin:18px 0 0;font-size:15.5px;line-height:1.75">I want to become a trusted partner who understands the business, keeps important projects moving, and helps improve the systems supporting its growth.</p>
+  </section>
+
   <!-- CTA -->
   <section data-screen-label="CTA" style="margin-top:72px;background:var(--ink);color:var(--off-white);padding:56px 48px;text-align:center">
-    <h2 style="margin:0;font-family:var(--font-body);font-weight:800;font-size:34px;line-height:1.1;letter-spacing:0.01em;text-transform:uppercase">Have a machine that needs an operator<span style="color:var(--orange)">?</span></h2>
-    <p style="margin:18px auto 0;max-width:480px;font-size:15px;line-height:1.7;color:var(--grey-mid)">If you're building on GoHighLevel and Claude and need someone to own the systems side — let's talk.</p>
+    <h2 style="margin:0;font-family:var(--font-body);font-weight:800;font-size:34px;line-height:1.1;letter-spacing:0.01em;text-transform:uppercase">Looking for someone who can own the systems behind your growth<span style="color:var(--orange)">?</span></h2>
+    <p style="margin:18px auto 0;max-width:520px;font-size:15px;line-height:1.7;color:var(--grey-mid)">If you need someone who can understand the vision, organize the work, build the infrastructure, and improve it using real performance data, let's talk.</p>
     <a href="mailto:hello@launchremedy.com" style="margin-top:28px;display:inline-flex;background:var(--orange);color:#fff;text-decoration:none;border:1.5px solid var(--orange);border-radius:999px;padding:16px 32px;font-size:13px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase" style-hover="background:var(--off-white);color:var(--ink)">hello@launchremedy.com →</a>
   </section>
 

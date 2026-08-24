@@ -24,7 +24,107 @@
     @keyframes gls-ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
     @keyframes gls-blink{50%{opacity:0}}
     @keyframes gls-box{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.25;transform:scale(0.75)}}
-  </style>
+  
+/* gls-responsive */
+img{max-width:100%}
+summary{list-style:none}
+summary::-webkit-details-marker{display:none}
+.gls-mnav{display:none}
+image-slot{min-width:0;max-width:100%}
+@media (max-width:1120px){
+[style*="min-width: 1100px"],[style*="min-width: 1000px"]{min-width:0!important}
+}
+@media (max-width:1024px){
+[style*="grid-template-columns: repeat(4, 1fr)"]{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:32px!important}
+[style*="padding: 96px 56px"]{padding-left:32px!important;padding-right:32px!important}
+}
+@media (max-width:900px){
+[data-screen-label="Section Dots"]{display:none!important}
+.gls-links{display:none!important}
+.gls-mnav{display:block}
+.gls-topnav{width:100%!important;justify-content:space-between!important}
+h1{font-size:clamp(40px,8.5vw,64px)!important}
+[style*="grid-template-columns: minmax(0px"]{grid-template-columns:minmax(0,1fr)!important;gap:48px!important}
+[style*="grid-template-columns: 1.2fr 1fr"]{grid-template-columns:minmax(0,1fr)!important;gap:56px!important}
+[style*="grid-template-columns: repeat(3, 1fr)"]{grid-template-columns:minmax(0,1fr)!important}
+[style*="position: sticky; top: 0px; height: 100vh"]{position:static!important;height:auto!important}
+[style*="min-height: 55vh"],[style*="min-height: 85vh"]{min-height:0!important}
+.gls-areas{grid-template-columns:minmax(0,1fr)!important}
+.gls-areas>div:last-child{display:none!important}
+.gls-areas>div:first-child{padding:0 24px 48px!important}
+.gls-areas [data-area-step]{min-height:0!important;padding:40px 0!important;justify-content:flex-start!important}
+.gls-offers{height:auto!important;flex-direction:column!important}
+.gls-offers>div{flex:none!important;min-width:0!important;border-left:none!important}
+.gls-offers>div+div{border-top:1.5px solid var(--ink)}
+.gls-offers>div>div{position:static!important}
+.gls-offers [style*="writing-mode"]{writing-mode:horizontal-tb!important;font-size:18px!important;white-space:normal!important}
+.gls-offers>div>div[style*="padding: 32px 0px"]{flex-direction:row!important;padding:18px 22px!important;gap:14px!important;justify-content:space-between!important;align-items:center!important}
+.gls-offers>div>div[style*="padding: 44px 48px"]{padding:32px 24px!important}
+.gls-offers [style*="font-size: 46px"]{font-size:30px!important}
+.gls-offers [style*="margin-top: auto"]{margin-top:24px!important}
+.gls-hscroll{overflow-x:auto!important;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:6px}
+.gls-track{transform:none!important}
+.gls-track>div{flex:0 0 85%!important;scroll-snap-align:center}
+.gls-carnav{display:none!important}
+.gls-tabs{overflow-x:auto;justify-content:flex-start!important}
+.gls-tabs>span{padding:12px 16px 14px!important;font-size:14px!important;white-space:nowrap}
+[style*="align-items: flex-end; gap: 6px"]{overflow-x:auto}
+[style*="justify-content: center; gap: 12px"]{flex-wrap:wrap}
+[style*="align-items: flex-end; gap: 48px"]{flex-wrap:wrap}
+[style*="height: 560px"]{height:auto!important}
+[style*="height: 520px"]{height:420px!important}
+[style*="height: 480px"]{height:400px!important}
+[style*="right: -24px"]{right:12px!important}
+[style*="left: -24px"]{left:12px!important}
+}
+@media (max-width:640px){
+h1{font-size:clamp(33px,10.5vw,46px)!important}
+[style*="padding: 56px 64px 64px"]{padding:32px 22px 40px!important}
+[style*="font-size: 64px"]{font-size:40px!important}
+[style*="font-size: 40px"]{font-size:28px!important}
+
+[style*="font-size: 60px"]{font-size:clamp(26px,8vw,38px)!important}
+h2[style*="font-size: 6"],h2[style*="font-size: 5"]{font-size:clamp(28px,8.5vw,36px)!important}
+h2[style*="font-size: 4"]{font-size:clamp(26px,8vw,32px)!important}
+h3[style*="font-size: 30px"]{font-size:23px!important}
+[style*="font-size: 34px"]{font-size:26px!important}
+[style*="font-size: 28px"]{font-size:20px!important}
+[style*="grid-template-columns: repeat(2, 1fr)"],[style*="grid-template-columns: 1fr 1fr"],[style*="grid-template-columns: repeat(4, 1fr)"]{grid-template-columns:minmax(0,1fr)!important;gap:24px!important}
+[style*="padding: 26px 32px"]{padding:14px!important}
+[style*="padding: 28px 32px"]{padding:14px 12px!important}
+[style*="padding: 96px 32px"]{padding:64px 20px!important}
+[style*="padding: 96px 56px"]{padding:64px 20px!important}
+[style*="padding: 104px 32px"]{padding:72px 20px!important}
+[style*="padding: 112px 32px"]{padding:72px 20px!important}
+[style*="padding: 120px 32px"]{padding:80px 20px!important}
+[style*="padding: 128px 32px"]{padding:80px 20px!important}
+[style*="padding: 88px 32px"]{padding:56px 20px!important}
+[style*="padding: 64px 48px"]{padding:56px 20px!important}
+[style*="padding: 44px 48px"]{padding:28px 22px!important}
+[style*="padding: 64px 68px"]{padding:36px 22px!important}
+[style*="padding: 36px 40px"]{padding:26px 20px!important}
+[style*="padding: 36px 32px"]{padding:26px 20px!important}
+[style*="padding: 96px 56px 0px"]{padding:64px 20px 0!important}
+[style*="padding: 132px 32px 120px"]{padding:112px 20px 76px!important}
+[style*="padding: 120px 32px 128px"]{padding:80px 20px 88px!important}
+[style*="padding: 72px 32px 88px"]{padding:56px 20px 64px!important}
+[style*="padding: 64px 32px 72px"]{padding:48px 20px 56px!important}
+[style*="padding: 56px 32px 96px"]{padding:40px 20px 72px!important}
+[style*="padding: 48px 32px 56px"]{padding:40px 20px 48px!important}
+[style*="padding: 80px 32px 96px"]{padding:56px 20px 72px!important}
+[style*="padding: 16px 32px"]{padding:14px 22px!important}
+[style*="padding: 17px 34px"]{padding:14px 24px!important}
+[style*="justify-content: center; gap: 14px"],[style*="justify-content: center; gap: 16px"],[style*="justify-content: center; gap: 32px"],[style*="gap: 16px; align-items: center; justify-content: center"]{flex-wrap:wrap}
+[style*="height: 520px"]{height:340px!important}
+[style*="height: 480px"]{height:320px!important}
+.gls-track>div{flex:0 0 92%!important}
+[style*="right: -24px"]{padding:16px 18px!important;font-size:12px!important;bottom:-20px!important}
+}
+@media (max-width:480px){
+nav span[style*="font-size: 15px"]{display:none!important}
+}
+</style>
+  <script>document.addEventListener('click',function(e){var d=document.querySelector('details.gls-mnav');if(d&&d.open&&e.target.closest('.gls-mnav a'))d.removeAttribute('open');});</script>
 </helmet>
 
 <div style="min-width:1100px">
@@ -36,27 +136,28 @@
 
 <!-- Sticky nav -->
 <div data-screen-label="Nav" style="position:sticky;top:0;z-index:60;display:flex;justify-content:center;padding:{{ navWrapPad }};pointer-events:none;margin-bottom:-88px;transition:padding 0.25s ease-out">
-    <nav style="pointer-events:auto;display:flex;align-items:center;gap:6px;width:{{ navWidth }};justify-content:{{ navJustify }};background:{{ navBg }};border:{{ navBorder }};border-bottom:1.5px solid var(--ink);border-radius:{{ navRadius }};padding:{{ navPad }};box-shadow:{{ navShadow }};transition:all 0.25s ease-out;box-sizing:border-box">
+    <nav class="gls-topnav" style="pointer-events:auto;display:flex;align-items:center;gap:6px;width:{{ navWidth }};justify-content:{{ navJustify }};background:{{ navBg }};border:{{ navBorder }};border-bottom:1.5px solid var(--ink);border-radius:{{ navRadius }};padding:{{ navPad }};box-shadow:{{ navShadow }};transition:all 0.25s ease-out;box-sizing:border-box">
       <a href="#top" style="display:flex;align-items:center;gap:10px;text-decoration:none;padding:6px 14px 6px 6px">
         <img src="assets/mark-filled-tile.png" alt="GoLaunch Studio mark" style="height:30px;width:30px;border-radius:8px">
         <span style="font-family:var(--font-display);font-weight:800;font-size:15px;letter-spacing:-0.02em">GoLaunch Studio<span style="color:var(--orange)">.</span></span>
       </a>
-      <div style="display:flex;align-items:center;gap:4px"><a href="#offers" style="text-decoration:none;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">Our Offers</a>
+      <div class="gls-links" style="display:flex;align-items:center;gap:4px"><a href="#offers" style="text-decoration:none;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">Our Offers</a>
       <a href="#areas" style="text-decoration:none;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">What We Do</a>
       <a href="#about" style="text-decoration:none;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">About</a>
       <a href="#portfolio" style="text-decoration:none;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">Portfolio</a>
       <a href="#work-cta" style="text-decoration:none;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">Work With Us</a></div>
+      <details class="gls-mnav" style="position:relative"><summary style="cursor:pointer;font-size:13px;font-weight:700;padding:9px 16px;border-radius:999px;border:1.5px solid var(--ink);background:#fff">Menu</summary><div style="position:absolute;right:0;top:48px;min-width:210px;background:#fff;border:1.5px solid var(--ink);border-radius:14px;padding:10px;display:flex;flex-direction:column;gap:2px;box-shadow:0 16px 32px rgba(20,18,16,0.18)"><a href="#offers" style="text-decoration:none;font-size:14px;font-weight:700;padding:10px 14px;border-radius:10px">Our Offers</a><a href="#areas" style="text-decoration:none;font-size:14px;font-weight:700;padding:10px 14px;border-radius:10px">What We Do</a><a href="#about" style="text-decoration:none;font-size:14px;font-weight:700;padding:10px 14px;border-radius:10px">About</a><a href="#portfolio" style="text-decoration:none;font-size:14px;font-weight:700;padding:10px 14px;border-radius:10px">Portfolio</a><a href="#work-cta" style="text-decoration:none;font-size:14px;font-weight:700;padding:10px 14px;border-radius:10px">Work With Us</a></div></details>
       <a href="work-with-us.html#work-with-us" style="text-decoration:none;font-size:13px;font-weight:700;padding:8px 18px;border-radius:999px;background:var(--ink);color:var(--off-white)" style-hover="background:var(--orange)">Inquire</a>
     </nav>
 </div>
 
-<!-- Hero — gradient stage with devices -->
+<!-- Hero, gradient stage with devices -->
 <section id="top" data-screen-label="Hero" style="position:relative;border-bottom:1.5px solid var(--ink);background-color:#fff;background-image:linear-gradient(rgba(20,18,16,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(20,18,16,0.05) 1px,transparent 1px);background-size:48px 48px;background-position:center top">
   <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 55% at 50% 42%,#fff 35%,rgba(255,255,255,0) 100%);pointer-events:none"></div>
   <div style="position:relative;z-index:3;max-width:820px;margin:0 auto;padding:132px 32px 120px;text-align:center">
     <h1 style="margin:0;font-family:var(--font-body);font-weight:800;font-size:76px;line-height:0.98;letter-spacing:0.01em;text-transform:uppercase;text-wrap:balance">Digital ecosystems for</h1>
     <div style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:60px;line-height:1.15;letter-spacing:-0.02em;color:var(--ink)"><span style="color:var(--orange)">{{ typedWord }}</span><span style="display:inline-block;width:3px;height:0.85em;background:var(--orange);margin:0 8px 0 3px;vertical-align:-0.08em;animation:gls-blink 0.9s step-end infinite"></span>brands.</div>
-    <p style="margin:26px auto 0;max-width:560px;font-size:16.5px;line-height:1.65">We build the digital ecosystem that supports your next level of growth — strategic funnels, seamless automations, and scalable systems.</p>
+    <p style="margin:26px auto 0;max-width:560px;font-size:16.5px;line-height:1.65">We build the digital ecosystem that supports your next level of growth, strategic funnels, seamless automations, and scalable systems.</p>
     <div style="margin-top:34px;display:flex;justify-content:center">
       <a href="work-with-us.html" style="display:inline-flex;align-items:center;gap:10px;background:var(--blue);color:#fff;text-decoration:none;border-radius:999px;padding:16px 32px;font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;border:1.5px solid var(--ink);box-shadow:0 12px 28px rgba(25,37,217,0.28)" style-hover="background:var(--blue-deep);color:#fff">Get your free Prescription →</a>
     </div>
@@ -88,7 +189,7 @@
     <div>
       <div style="display:flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--ink)"><span style="display:inline-flex;gap:4px;align-items:center"><span style="width:9px;height:9px;background:var(--orange);animation:gls-box 1.6s ease-in-out 0s infinite"></span><span style="width:9px;height:9px;background:var(--yellow);animation:gls-box 1.6s ease-in-out 0.25s infinite"></span><span style="width:9px;height:9px;background:var(--ink);animation:gls-box 1.6s ease-in-out 0.5s infinite"></span></span><span>The Symptoms</span></div>
       <h2 style="margin:16px 0 0;font-family:var(--font-body);font-weight:800;font-size:46px;line-height:1;letter-spacing:0.01em;text-transform:uppercase">Sound familiar<span style="color:var(--orange)">?</span></h2>
-      <p style="margin:24px 0 0;font-size:16px;line-height:1.75;max-width:400px">Most founder-led businesses don't have a marketing problem — they have a <span style="font-weight:700">systems problem</span>. Check what you're feeling. If it's more than a couple, keep scrolling.</p>
+      <p style="margin:24px 0 0;font-size:16px;line-height:1.75;max-width:400px">Most founder-led businesses don't have a marketing problem, they have a <span style="font-weight:700">systems problem</span>. Check what you're feeling. If it's more than a couple, keep scrolling.</p>
       <div style="margin-top:28px;display:flex;align-items:center;gap:12px;font-family:var(--font-body);font-style:italic;font-weight:600;font-size:18px"><span style="width:12px;height:12px;border-radius:50%;background:var(--orange);display:inline-block"></span>Consider this your system check.</div>
     </div>
     <div style="background:#fff;border:1.5px solid var(--ink);border-radius:16px">
@@ -146,7 +247,7 @@
       <div style="border:1.5px solid #2e2b27;background:#1c1916;padding:32px 28px">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.9;margin-bottom:16px"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline><polyline points="16 17 22 17 22 11"></polyline></svg>
         <div style="font-family:var(--font-display);font-weight:800;font-size:15px;letter-spacing:0.14em;text-transform:uppercase;color:var(--orange)">Lost revenue</div>
-        <p style="margin:12px 0 0;font-size:14px;line-height:1.7;color:var(--grey-mid)">Every lead that leaks out of a half-built funnel is money already earned — and lost.</p>
+        <p style="margin:12px 0 0;font-size:14px;line-height:1.7;color:var(--grey-mid)">Every lead that leaks out of a half-built funnel is money already earned, and lost.</p>
       </div>
       <div style="border:1.5px solid #2e2b27;background:#1c1916;padding:32px 28px">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.9;margin-bottom:16px"><path d="M8 2v4"></path><path d="M12 2v4"></path><path d="M16 2v4"></path><path d="M17 10c1-1.5 1-4-1-4H8c-2 0-2 2.5-1 4 .5.8 1.5 1.3 1.5 2.5S7.5 15 7 16c-1 1.5-1 4 1 4h8c2 0 2-2.5 1-4-.5-.8-1.5-1.3-1.5-2.5S16.5 10.8 17 10z"></path></svg>
@@ -165,7 +266,7 @@
       </div>
     </div>
     <div style="margin-top:44px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
-      <span style="font-size:15px;font-weight:600;line-height:1.6;max-width:640px"><span style="color:var(--yellow);font-weight:800">The good news:</span> every one of these is treatable — and the treatment starts with a free diagnosis.</span>
+      <span style="font-size:15px;font-weight:600;line-height:1.6;max-width:640px"><span style="color:var(--yellow);font-weight:800">The good news:</span> every one of these is treatable, and the treatment starts with a free diagnosis.</span>
       <a href="work-with-us.html" style="display:inline-flex;background:var(--yellow);color:var(--ink);text-decoration:none;border-radius:999px;padding:13px 26px;font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase">Get your free Prescription →</a>
     </div>
   </div>
@@ -179,9 +280,9 @@
         <div style="display:flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--ink)"><span style="display:inline-flex;gap:4px;align-items:center"><span style="width:9px;height:9px;background:var(--orange);animation:gls-box 1.6s ease-in-out 0s infinite"></span><span style="width:9px;height:9px;background:var(--yellow);animation:gls-box 1.6s ease-in-out 0.25s infinite"></span><span style="width:9px;height:9px;background:var(--ink);animation:gls-box 1.6s ease-in-out 0.5s infinite"></span></span><span>Done-for-you implementation</span></div>
         <h2 style="margin:16px 0 0;font-family:var(--font-body);font-weight:800;font-size:52px;line-height:0.98;letter-spacing:0.01em;text-transform:uppercase">Three signature<br>offers<span style="color:var(--orange)">.</span></h2>
       </div>
-      <p style="margin:0;max-width:380px;font-size:15.5px;line-height:1.7;color:var(--warm-grey)">Every engagement starts with a GoLaunch Prescription™ — assessment, diagnosis, prescription, treatment plan. Scope, investment and timeline included.</p>
+      <p style="margin:0;max-width:380px;font-size:15.5px;line-height:1.7;color:var(--warm-grey)">Every engagement starts with a GoLaunch Prescription™, assessment, diagnosis, prescription, treatment plan. Scope, investment and timeline included.</p>
     </div>
-    <div style="margin-top:56px;display:flex;height:560px;border:1.5px solid var(--ink);border-radius:20px;overflow:hidden;box-shadow:0 24px 48px rgba(20,18,16,0.12)">
+    <div class="gls-offers" style="margin-top:56px;display:flex;height:560px;border:1.5px solid var(--ink);border-radius:20px;overflow:hidden;box-shadow:0 24px 48px rgba(20,18,16,0.12)">
       <sc-for list="{{ offers }}" as="of" hint-placeholder-count="3">
         <div onMouseEnter="{{ of.onEnter }}" onClick="{{ of.onEnter }}" style="flex:{{ of.flex }};background:{{ of.bg }};color:{{ of.fg }};border-left:{{ of.divider }};position:relative;overflow:hidden;cursor:pointer;transition:flex 0.4s cubic-bezier(0.4,0,0.2,1);min-width:120px">
           <!-- Collapsed spine -->
@@ -211,11 +312,11 @@
         </div>
       </sc-for>
     </div>
-    <p style="margin:44px 0 0;text-align:center;font-size:15px;line-height:1.7;color:var(--warm-grey);max-width:520px;margin-left:auto;margin-right:auto">Not an exact fit? Every package can be customized to your needs — we scope it around your Prescription™.</p>
+    <p style="margin:44px 0 0;text-align:center;font-size:15px;line-height:1.7;color:var(--warm-grey);max-width:520px;margin-left:auto;margin-right:auto">Not an exact fit? Every package can be customized to your needs, we scope it around your Prescription™.</p>
     <div style="margin-top:24px;display:flex;gap:16px;align-items:center;justify-content:center">
-      <a href="#start" style="text-decoration:none"><x-import component-from-global-scope="GoLaunchStudioDesignSystem_b34a1d.Button" size="lg" hint-size="240px,48px">I'm ready — start treatment</x-import></a>
+      <a href="#start" style="text-decoration:none"><x-import component-from-global-scope="GoLaunchStudioDesignSystem_b34a1d.Button" size="lg" hint-size="240px,48px">I'm ready, start treatment</x-import></a>
       <span style="font-size:12px;font-weight:700;letter-spacing:0.2em;color:var(--warm-grey)">OR</span>
-      <a href="#start" style="text-decoration:none"><x-import component-from-global-scope="GoLaunchStudioDesignSystem_b34a1d.Button" variant="secondary" size="lg" hint-size="280px,48px">I have questions — book a review</x-import></a>
+      <a href="#start" style="text-decoration:none"><x-import component-from-global-scope="GoLaunchStudioDesignSystem_b34a1d.Button" variant="secondary" size="lg" hint-size="280px,48px">I have questions, book a review</x-import></a>
     </div>
   </div>
 </section>
@@ -226,12 +327,12 @@
     <div style="display:flex;align-items:center;justify-content:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--off-white)"><span style="display:inline-flex;gap:4px;align-items:center"><span style="width:9px;height:9px;background:var(--orange);animation:gls-box 1.6s ease-in-out 0s infinite"></span><span style="width:9px;height:9px;background:var(--yellow);animation:gls-box 1.6s ease-in-out 0.25s infinite"></span><span style="width:9px;height:9px;background:var(--off-white);animation:gls-box 1.6s ease-in-out 0.5s infinite"></span></span><span>What we do</span></div>
     <h2 style="margin:16px 0 0;font-family:var(--font-body);font-weight:800;font-size:52px;line-height:0.98;letter-spacing:0.01em;text-transform:uppercase">Five core areas<span style="color:var(--orange)">.</span></h2>
   </div>
-  <div style="margin-top:48px;display:grid;grid-template-columns:1fr 1fr;gap:0">
+  <div class="gls-areas" style="margin-top:48px;display:grid;grid-template-columns:1fr 1fr;gap:0">
       <div style="padding:0 72px 72px max(56px,calc(50vw - 604px));box-sizing:border-box">
         <div data-area-step="0" style="min-height:55vh;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;padding:48px 0;border-top:1.5px solid #2e2b27">
           <span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:20px;color:var(--yellow)">01</span>
           <h3 style="margin:10px 0 0;font-family:var(--font-body);font-weight:800;font-size:30px;letter-spacing:0.01em;text-transform:uppercase">Websites</h3>
-          <p style="margin:14px 0 0;max-width:480px;font-size:15.5px;line-height:1.7;color:var(--grey-mid)">Strategic, high-converting websites that build trust and guide your visitors — designed to look premium and quietly do the selling for you.</p>
+          <p style="margin:14px 0 0;max-width:480px;font-size:15.5px;line-height:1.7;color:var(--grey-mid)">Strategic, high-converting websites that build trust and guide your visitors, designed to look premium and quietly do the selling for you.</p>
         </div>
         <div data-area-step="1" style="min-height:55vh;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;padding:48px 0;border-top:1.5px solid #2e2b27">
           <span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:20px;color:var(--yellow)">02</span>
@@ -284,7 +385,7 @@
       <h2 style="margin:16px 0 0;font-family:var(--font-body);font-weight:800;font-size:46px;line-height:1;letter-spacing:0.01em;text-transform:uppercase">Beyond funnels.<br>We build the systems behind growth<span style="color:var(--orange)">.</span></h2>
       <p style="margin:26px auto 0;font-size:16px;line-height:1.75;max-width:640px">GoLaunch helps founder-led brands move beyond disconnected websites, funnels, tools and manual processes by turning them into <span style="font-weight:700">one clear, connected system.</span></p>
       <p style="margin:18px auto 0;font-size:16px;line-height:1.75;max-width:640px">From strategy and design to automation, AI agents and streamlined operations, we build what your growing business needs to run more smoothly, serve clients better, and grow without creating more work for you.</p>
-      <p style="margin:18px auto 0;font-size:16px;line-height:1.75;max-width:640px;font-weight:700">Everything is built with purpose — and designed to work together.</p>
+      <p style="margin:18px auto 0;font-size:16px;line-height:1.75;max-width:640px;font-weight:700">Everything is built with purpose, and designed to work together.</p>
       <div style="margin-top:32px;display:none;align-items:center;justify-content:center;gap:20px">
         <a href="about.html" style="display:inline-flex;background:var(--ink);color:var(--off-white);text-decoration:none;border:1.5px solid var(--ink);border-radius:999px;padding:14px 28px;font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase" style-hover="background:var(--orange);color:#fff">Read more about us →</a>
       </div>
@@ -300,7 +401,7 @@
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:14px">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.85"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"></path><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path><path d="M12 2v2"></path><path d="M12 22v-2"></path><path d="m17 20.66-1-1.73"></path><path d="m7 3.34 1 1.73"></path><path d="m20.66 17-1.73-1"></path><path d="m3.34 7 1.73 1"></path><path d="M22 12h-2"></path><path d="M2 12h2"></path></svg>
-        <span style="font-size:15px;font-weight:700;line-height:1.4">Systems over heroics —<br>always.</span>
+        <span style="font-size:15px;font-weight:700;line-height:1.4">Systems over heroics,<br>always.</span>
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:14px">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.85"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
@@ -323,8 +424,8 @@
       <div style="display:flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--ink)"><span style="display:inline-flex;gap:4px;align-items:center"><span style="width:9px;height:9px;background:var(--orange);animation:gls-box 1.6s ease-in-out 0s infinite"></span><span style="width:9px;height:9px;background:var(--yellow);animation:gls-box 1.6s ease-in-out 0.25s infinite"></span><span style="width:9px;height:9px;background:var(--ink);animation:gls-box 1.6s ease-in-out 0.5s infinite"></span></span><span>Meet your specialist</span></div>
       <h2 style="margin:16px 0 0;font-family:var(--font-body);font-weight:800;font-size:46px;line-height:1;letter-spacing:0.01em;text-transform:uppercase">Hi, I'm Naj<span style="color:var(--orange)">.</span></h2>
       <div style="margin:14px 0 0;font-family:var(--font-body);font-style:italic;font-weight:600;font-size:19px;color:var(--orange)">Digital Systems Strategist &amp; Build Partner</div>
-      <p style="margin:22px 0 0;font-size:16px;line-height:1.75">I help founder-led brands build the digital systems their growing businesses need — from websites and funnels to automation, AI agents and streamlined operations. I'm not here to simply complete a list of tasks. <span style="font-weight:700">I help you identify what's slowing the business down, decide what needs to be built, and turn it into a system your team can actually use.</span></p>
-      <p style="margin:18px 0 0;font-size:16px;line-height:1.75">AI and automation handle the repetitive work. I bring the strategy, judgment and human understanding needed to make everything work together — <span style="font-weight:700">so your business can grow without creating more work for you.</span></p>
+      <p style="margin:22px 0 0;font-size:16px;line-height:1.75">I help founder-led brands build the digital systems their growing businesses need, from websites and funnels to automation, AI agents and streamlined operations. I'm not here to simply complete a list of tasks. <span style="font-weight:700">I help you identify what's slowing the business down, decide what needs to be built, and turn it into a system your team can actually use.</span></p>
+      <p style="margin:18px 0 0;font-size:16px;line-height:1.75">AI and automation handle the repetitive work. I bring the strategy, judgment and human understanding needed to make everything work together, <span style="font-weight:700">so your business can grow without creating more work for you.</span></p>
       <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap">
         <a href="https://www.instagram.com/golaunchstudio" style="text-decoration:none;border:1.5px solid var(--ink);padding:12px 22px;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;background:#fff" style-hover="background:var(--yellow)">Instagram</a>
         <a href="https://www.threads.net/@najbuilds" style="text-decoration:none;border:1.5px solid var(--ink);padding:12px 22px;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;background:#fff" style-hover="background:var(--yellow)">Threads</a>
@@ -343,15 +444,15 @@
         <div style="display:flex;align-items:center;justify-content:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--ink)"><span style="display:inline-flex;gap:4px;align-items:center"><span style="width:9px;height:9px;background:var(--orange);animation:gls-box 1.6s ease-in-out 0s infinite"></span><span style="width:9px;height:9px;background:var(--yellow);animation:gls-box 1.6s ease-in-out 0.25s infinite"></span><span style="width:9px;height:9px;background:var(--ink);animation:gls-box 1.6s ease-in-out 0.5s infinite"></span></span><span>The Portfolio</span></div>
         <h2 style="margin:16px 0 0;font-family:var(--font-body);font-weight:800;font-size:52px;line-height:0.98;letter-spacing:0.01em;text-transform:uppercase">Proof of work<span style="color:var(--orange)">.</span></h2>
       </div>
-      <p style="margin:22px 0 0;max-width:560px;font-size:15.5px;line-height:1.7;color:var(--warm-grey)">Pick a category — every build here runs in the real world.</p>
+      <p style="margin:22px 0 0;max-width:560px;font-size:15.5px;line-height:1.7;color:var(--warm-grey)">Pick a category, every build here runs in the real world.</p>
     </div>
-    <div style="margin-top:48px;display:flex;justify-content:center;border-bottom:1.5px solid var(--ink)">
+    <div class="gls-tabs" style="margin-top:48px;display:flex;justify-content:center;border-bottom:1.5px solid var(--ink)">
       <sc-for list="{{ portfolioTabs }}" as="pt" hint-placeholder-count="5">
         <span onClick="{{ pt.onPick }}" style="cursor:pointer;padding:16px 28px 18px;margin-bottom:-1.5px;font-family:var(--font-display);font-weight:800;font-size:17px;letter-spacing:0.04em;text-transform:uppercase;color:{{ pt.fg }};border-bottom:3px solid {{ pt.line }};transition:color 0.15s ease-out" style-hover="color:var(--ink)">{{ pt.label }}</span>
       </sc-for>
     </div>
-    <div style="margin-top:36px;overflow:hidden">
-      <div style="display:flex;gap:20px;transform:translateX({{ pfX }});transition:transform 0.5s cubic-bezier(0.25,0.8,0.3,1)">
+    <div class="gls-hscroll" style="margin-top:36px;overflow:hidden">
+      <div class="gls-track" style="display:flex;gap:20px;transform:translateX({{ pfX }});transition:transform 0.5s cubic-bezier(0.25,0.8,0.3,1)">
       <sc-for list="{{ portfolioItems }}" as="pi" hint-placeholder-count="3">
         <div style="flex:0 0 calc((100% - 40px)/3);box-sizing:border-box;border:1.5px solid var(--ink);background:#fff;display:flex;flex-direction:column">
           <div style="aspect-ratio:3/4;border-bottom:1.5px solid var(--ink);overflow:hidden;background:var(--off-white)">
@@ -370,7 +471,7 @@
       </div>
     </div>
     <sc-if value="{{ pfHasMore }}" hint-placeholder-val="{{ true }}">
-      <div style="margin-top:32px;display:flex;align-items:center;justify-content:center;gap:16px">
+      <div class="gls-carnav" style="margin-top:32px;display:flex;align-items:center;justify-content:center;gap:16px">
         <button onClick="{{ pfPrev }}" aria-label="Previous projects" style="width:44px;height:44px;border-radius:50%;border:1.5px solid var(--ink);background:{{ pfPrevBg }};color:{{ pfPrevFg }};font-size:17px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center">←</button>
         <span style="font-size:13px;font-weight:700;letter-spacing:0.14em;color:var(--warm-grey)">{{ pfPage }}</span>
         <button onClick="{{ pfNext }}" aria-label="Next projects" style="width:44px;height:44px;border-radius:50%;border:1.5px solid var(--ink);background:{{ pfNextBg }};color:{{ pfNextFg }};font-size:17px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center">→</button>
@@ -387,8 +488,8 @@
       <div style="display:flex;align-items:center;justify-content:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--ink)"><span style="display:inline-flex;gap:4px;align-items:center"><span style="width:9px;height:9px;background:var(--orange);animation:gls-box 1.6s ease-in-out 0s infinite"></span><span style="width:9px;height:9px;background:var(--yellow);animation:gls-box 1.6s ease-in-out 0.25s infinite"></span><span style="width:9px;height:9px;background:var(--ink);animation:gls-box 1.6s ease-in-out 0.5s infinite"></span></span><span>Kind words</span></div>
       <h2 style="margin:16px 0 0;font-family:var(--font-body);font-weight:800;font-size:46px;line-height:1;letter-spacing:0.01em;text-transform:uppercase">What clients say<span style="color:var(--orange)">.</span></h2>
     </div>
-    <div style="margin-top:56px;overflow:hidden">
-      <div style="display:flex;gap:20px;transform:translateX({{ testiX }});transition:transform 0.5s cubic-bezier(0.25,0.8,0.3,1)">
+    <div class="gls-hscroll" style="margin-top:56px;overflow:hidden">
+      <div class="gls-track" style="display:flex;gap:20px;transform:translateX({{ testiX }});transition:transform 0.5s cubic-bezier(0.25,0.8,0.3,1)">
       <div style="flex:0 0 calc((100% - 40px)/3);box-sizing:border-box;border:1.5px solid var(--ink);padding:36px 32px;display:flex;flex-direction:column;gap:24px;background:var(--off-white)">
         <span style="font-family:var(--font-body);font-style:italic;font-weight:600;font-size:40px;line-height:0.5;color:var(--orange)">"</span>
         <p style="margin:0;font-size:15.5px;line-height:1.75;flex:1">Naj has been an amazing asset to our team! She designs beautiful pages in both Kajabi and Systeme.io. As an agency owner I've worked with dozens of designers and it's so important to find someone who not only can complete the tasks but takes the initiative that Naj does! I highly recommend her for project management and design work.</p>
@@ -418,7 +519,7 @@
         </div>
       </div>
     </div>
-    <div style="margin-top:36px;display:flex;align-items:center;justify-content:center;gap:16px">
+    <div class="gls-carnav" style="margin-top:36px;display:flex;align-items:center;justify-content:center;gap:16px">
       <button onClick="{{ testiPrev }}" aria-label="Previous testimonials" style="width:44px;height:44px;border-radius:50%;border:1.5px solid var(--ink);background:{{ testiPrevBg }};color:{{ testiPrevFg }};font-size:17px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center">←</button>
       <span style="font-size:13px;font-weight:700;letter-spacing:0.14em;color:var(--warm-grey)">{{ testiPage }}</span>
       <button onClick="{{ testiNext }}" aria-label="Next testimonials" style="width:44px;height:44px;border-radius:50%;border:1.5px solid var(--ink);background:{{ testiNextBg }};color:{{ testiNextFg }};font-size:17px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center">→</button>
@@ -432,7 +533,7 @@
   <div style="max-width:860px;margin:0 auto;padding:112px 32px;text-align:center">
     <div style="display:flex;align-items:center;justify-content:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--off-white)"><span style="display:inline-flex;gap:4px;align-items:center"><span style="width:9px;height:9px;background:var(--orange);animation:gls-box 1.6s ease-in-out 0s infinite"></span><span style="width:9px;height:9px;background:var(--yellow);animation:gls-box 1.6s ease-in-out 0.25s infinite"></span><span style="width:9px;height:9px;background:var(--off-white);animation:gls-box 1.6s ease-in-out 0.5s infinite"></span></span><span>The Newsletter</span></div>
     <h2 style="margin:20px 0 0;font-family:var(--font-body);font-weight:800;font-size:84px;line-height:0.95;letter-spacing:0.01em;text-transform:uppercase">The Gridlines<span style="color:var(--orange)">.</span></h2>
-    <p style="margin:28px auto 0;max-width:520px;font-size:16.5px;line-height:1.7;color:var(--grey-mid)">One weekly email on growth systems — funnels, launches and automation for founder-led brands. No fluff, unsubscribe anytime.</p>
+    <p style="margin:28px auto 0;max-width:520px;font-size:16.5px;line-height:1.7;color:var(--grey-mid)">One weekly email on growth systems, funnels, launches and automation for founder-led brands. No fluff, unsubscribe anytime.</p>
     <sc-if value="{{ notSubscribed }}" hint-placeholder-val="{{ true }}">
       <div style="margin:40px auto 0;display:flex;gap:12px;max-width:520px">
         <input value="{{ email }}" onChange="{{ onEmailChange }}" placeholder="you@company.com" style="flex:1;font-family:inherit;font-size:15px;padding:15px 20px;border:1.5px solid var(--off-white);border-radius:999px;background:transparent;color:var(--off-white);outline-color:var(--yellow)">
@@ -455,7 +556,7 @@
         <div style="display:flex;align-items:center;justify-content:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--ink)"><span style="display:inline-flex;gap:4px;align-items:center"><span style="width:9px;height:9px;background:var(--orange);animation:gls-box 1.6s ease-in-out 0s infinite"></span><span style="width:9px;height:9px;background:var(--yellow);animation:gls-box 1.6s ease-in-out 0.25s infinite"></span><span style="width:9px;height:9px;background:var(--ink);animation:gls-box 1.6s ease-in-out 0.5s infinite"></span></span><span>The Method</span></div>
         <h2 style="margin:16px 0 0;font-family:var(--font-body);font-weight:800;font-size:52px;line-height:0.98;letter-spacing:0.01em;text-transform:uppercase">The GoLaunch<br>Framework™</h2>
       </div>
-      <p style="margin:22px 0 0;max-width:560px;font-size:15.5px;line-height:1.7;color:var(--warm-grey)">Our proven 7-stage method to assess, build, launch and grow your digital ecosystem. Click a stage to explore — it's a continuous cycle of growth ↺</p>
+      <p style="margin:22px 0 0;max-width:560px;font-size:15.5px;line-height:1.7;color:var(--warm-grey)">Our proven 7-stage method to assess, build, launch and grow your digital ecosystem. Click a stage to explore, it's a continuous cycle of growth ↺</p>
     </div>
     <!-- Folder-tab stage map -->
     <div style="margin-top:64px;max-width:1040px;margin-left:auto;margin-right:auto">
@@ -517,7 +618,7 @@
         <img src="assets/mark-filled-tile.png" alt="GoLaunch Studio mark" style="height:36px;width:36px;border-radius:8px">
         <span style="font-family:var(--font-display);font-weight:800;font-size:20px;letter-spacing:0.02em;text-transform:uppercase">GoLaunch<span style="color:var(--orange)">.</span></span>
       </div>
-      <p style="margin:22px 0 0;font-size:14.5px;line-height:1.7;color:var(--grey-mid);max-width:420px">I'm Naj — a launch strategist and systems partner for founder-led brands. Keeping launches calm, premium and converting since day one.</p>
+      <p style="margin:22px 0 0;font-size:14.5px;line-height:1.7;color:var(--grey-mid);max-width:420px">I'm Naj, a launch strategist and systems partner for founder-led brands. Keeping launches calm, premium and converting since day one.</p>
       <div style="margin-top:26px;display:flex;flex-direction:column;gap:12px;font-size:14px">
         <a href="https://www.instagram.com/golaunchstudio" style="color:var(--off-white);text-decoration:none" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">◎ Come hang on Instagram</a>
         <a href="#start" style="display:none;color:var(--off-white);text-decoration:none" style-hover="text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:5px">✉ Get The Gridlines weekly</a>
@@ -731,13 +832,13 @@ class Component extends DCLogic {
     ['gls-cursor-dot', 'gls-cursor-ring'].forEach(id => { const el = document.getElementById(id); if (el) el.remove(); }); clearTimeout(this._t); clearInterval(this._fw); window.removeEventListener('scroll', this._onScroll); document.removeEventListener('visibilitychange', this._onVisibility); }
   renderVals() {
     const stages = [
-      { num: '01', name: 'Assess', tagline: 'Where you are now.', body: "We audit your digital ecosystem — what's working, what's missing, what's holding you back.", tabColor: 'var(--orange)', tabSoft: 'var(--orange-soft)' },
+      { num: '01', name: 'Assess', tagline: 'Where you are now.', body: "We audit your digital ecosystem, what's working, what's missing, what's holding you back.", tabColor: 'var(--orange)', tabSoft: 'var(--orange-soft)' },
       { num: '02', name: 'Diagnose', tagline: 'What we found.', body: 'Pinpoint gaps, leaks and opportunities. Prioritize the biggest impact.', tabColor: 'var(--blue)', tabSoft: 'var(--blue-soft)' },
-      { num: '03', name: 'Prescribe', tagline: 'Your roadmap.', body: 'Clear recommendations — a strategic plan across the 5 Core Areas.', tabColor: 'var(--yellow)', tabSoft: 'var(--yellow-soft)' },
-      { num: '04', name: 'Treat', tagline: 'We build & implement.', body: 'Design, build and automate your system — aligned to your treatment plan.', tabColor: 'var(--orange)', tabSoft: 'var(--orange-soft)' },
-      { num: '05', name: 'Launch', tagline: 'Go live with confidence.', body: 'Tested, optimized and ready — with the right systems in place.', tabColor: 'var(--blue)', tabSoft: 'var(--blue-soft)' },
-      { num: '06', name: 'Nurture', tagline: 'We grow your system.', body: 'Nurture leads and customers — automated follow-up, engagement and retention.', tabColor: 'var(--yellow)', tabSoft: 'var(--yellow-soft)' },
-      { num: '07', name: 'Monitor', tagline: 'We track & optimize.', body: 'Track performance and key metrics — continuous improvements for long-term growth.', tabColor: 'var(--ink)', tabSoft: 'var(--cream)' },
+      { num: '03', name: 'Prescribe', tagline: 'Your roadmap.', body: 'Clear recommendations, a strategic plan across the 5 Core Areas.', tabColor: 'var(--yellow)', tabSoft: 'var(--yellow-soft)' },
+      { num: '04', name: 'Treat', tagline: 'We build & implement.', body: 'Design, build and automate your system, aligned to your treatment plan.', tabColor: 'var(--orange)', tabSoft: 'var(--orange-soft)' },
+      { num: '05', name: 'Launch', tagline: 'Go live with confidence.', body: 'Tested, optimized and ready, with the right systems in place.', tabColor: 'var(--blue)', tabSoft: 'var(--blue-soft)' },
+      { num: '06', name: 'Nurture', tagline: 'We grow your system.', body: 'Nurture leads and customers, automated follow-up, engagement and retention.', tabColor: 'var(--yellow)', tabSoft: 'var(--yellow-soft)' },
+      { num: '07', name: 'Monitor', tagline: 'We track & optimize.', body: 'Track performance and key metrics, continuous improvements for long-term growth.', tabColor: 'var(--ink)', tabSoft: 'var(--cream)' },
     ];
     const names = ['WordPress', 'Shopify', 'Systeme.io', 'Kajabi', 'ClickFunnels', 'Wix', 'GoHighLevel', 'Canva', 'Claude', 'OpenAI', 'Zapier', 'Make', 'ManyChat', 'Klaviyo', 'Mailchimp', 'Stripe', 'Airtable'];
     const row = names.map(name => ({
@@ -846,7 +947,7 @@ class Component extends DCLogic {
       activeBody: stages[this.state.activeStage].body,
       nextStage: () => { this._userNav = true; this.setState(s => ({ activeStage: (s.activeStage + 1) % 7 })); },
       coreAreas: [
-        { num: '01', name: 'Websites', body: 'Strategic, high-converting websites that build trust and guide your visitors — designed to look premium and quietly do the selling for you.' },
+        { num: '01', name: 'Websites', body: 'Strategic, high-converting websites that build trust and guide your visitors, designed to look premium and quietly do the selling for you.' },
         { num: '02', name: 'Funnels', body: 'Conversion-focused funnels that capture leads and drive sales, from opt-in to checkout.' },
         { num: '03', name: 'Branding', body: 'Consistent brand identity that positions you and builds recognition across every touchpoint.' },
         { num: '04', name: 'E-commerce', body: 'Powerful online stores that create seamless shopping experiences and drive more sales.' },
